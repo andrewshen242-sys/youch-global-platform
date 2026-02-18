@@ -1,0 +1,392 @@
+export const common = {
+  // Navigation
+  nav: {
+    home: '首頁',
+    about: '關於我們',
+    academics: '學術課程',
+    admissions: '招生資訊',
+    faculty: '師資團隊',
+    community: '社群活動',
+    contact: '聯絡我們',
+    apply: '立即申請',
+  },
+
+  // Hero Section
+  hero: {
+    badge: '線上高中 · 教師培訓',
+    title: '專題式線上學習學院',
+    subtitle: '我們致力於打造一個以協作式學習為核心的線上學習樞紐,透過專題式學習(PBL),啟發學生的學習動機與思考能力。',
+    partnership: {
+      title: '專題式線上學習學院',
+      subtitle: '美國哥倫比亞大學教師學院提供學術支持',
+    },
+    applyNow: '立即申請',
+    learnMore: '了解更多',
+    scrollDown: '向下探索',
+    exploreCourses: '探索課程',
+  },
+
+  // Features Section
+  features: {
+    title: '三大學習支柱',
+    academicTitle: '學術課程特色',
+    academicDescription: '我們的課程設計基於最新的教育研究，結合探究式學習和專題式學習方法，培養學生的學術能力和終身學習技能。',
+    feature1: {
+      title: '專題式學習',
+      description: '培養學生主動提問、深度思考的能力，透過問題驅動的學習方式探索知識',
+    },
+    feature2: {
+      title: '實務應用',
+      description: '以真實世界的問題為核心，讓學生在實踐中學習，培養跨學科整合與問題解決能力',
+    },
+    feature3: {
+      title: '協作式成長',
+      description: '建立學習社群，透過同儕互動與教師引導，共同建構知識與分享經驗',
+    },
+    standards: {
+      title: '嚴謹的學術標準',
+      description: '我們的課程符合國際教育標準，並獲得哥倫比亞大學教師學院的學術認證。所有課程均由具有博士學位或豐富教學經驗的教師授課。',
+      feature1: '同步線上討論課程',
+      feature2: '小班制教學（平均13人）',
+      feature3: '個性化學術指導',
+      feature4: '大學預備課程',
+    },
+    subjects: {
+      title: '課程領域',
+      humanities: '人文學科',
+      science: '自然科學',
+      math: '數學',
+      socialScience: '社會科學',
+      language: '語言文學',
+      arts: '藝術',
+      computerScience: '計算機科學',
+      interdisciplinary: '跨學科研究',
+    },
+    learnMore: '深入了解',
+  },
+
+  // Mission Section
+  mission: {
+    title1: '我們的使命',
+    title2: '與願景',
+    partnership: {
+      badge: '終身學術合作夥伴',
+      title: '與哥倫比亞大學教師學院攜手',
+      description: '美國哥倫比亞大學教師學院（Teachers College, Columbia University）作為我們的終身學術合作夥伴，為我們的課程設計、教師培訓和教學研究提供專業支持與學術指導。',
+    },
+    achievements: '我們的成就',
+    stat1: '啟發主動學習的學生',
+    stat2: '持續創新的教育者',
+    stat3: '協作式專題',
+    point1: '啟發學生主動學習與深度思考的能力，透過協作式與專題導向學習，培養跨學科理解與問題解決能力',
+    point2: '支持學生建立清晰的學業進路與長期職業生涯方向',
+    point3: '促進教師專業成長與教學實踐的持續創新',
+    dualFocus: {
+      student: {
+        title: '學生教育',
+        description: '為7-12年級學生提供嚴謹的線上課程，透過探究式學習和專題研究，培養批判性思維和學術能力，為大學學習做好充分準備。',
+      },
+      teacher: {
+        title: '教師培訓',
+        description: '與哥倫比亞大學教師學院合作，為教育工作者提供專業發展課程，推動教學創新，提升教學實踐，培養新一代教育領袖。',
+      },
+    },
+  },
+
+  // Programs Section
+  programs: {
+    title1: '選擇你的',
+    title2: '學習旅程',
+    subtitle: '探索最適合你的學習方案，開啟成長之路',
+    admissionsTitle: '招生與入學選項',
+    admissionsDescription: '我們提供多種入學選項，滿足不同學習需求。無論您是尋求完整高中教育的學生，還是希望提升專業能力的教育工作者，我們都有適合您的項目。',
+    popularTag: '最受歡迎',
+    fullTime: {
+      name: '全日制學生',
+      description: '完整的線上高中課程，獲得正式高中文憑',
+      feature1: '完整課程體系',
+      feature2: '學術指導',
+      feature3: '大學升學輔導',
+      feature4: '畢業文憑',
+    },
+    elective: {
+      name: '選修課程學生',
+      description: '靈活選擇感興趣的課程，豐富學習經歷',
+      feature1: '彈性選課',
+      feature2: '學分認證',
+      feature3: '專業師資',
+      feature4: '線上學習',
+    },
+    teacherTraining: {
+      name: '教師培訓項目',
+      description: '與哥倫比亞大學教師學院合作的專業發展課程',
+      feature1: '專業認證',
+      feature2: '教學創新',
+      feature3: '學術研究',
+      feature4: '國際交流',
+    },
+    processTitle: '申請流程',
+    process: {
+      step1: {
+        title: '提交申請',
+        desc: '填寫線上申請表',
+      },
+      step2: {
+        title: '材料審核',
+        desc: '提交學術成績單',
+      },
+      step3: {
+        title: '面試評估',
+        desc: '參加線上面試',
+      },
+      step4: {
+        title: '錄取通知',
+        desc: '收到錄取決定',
+      },
+    },
+    program1: {
+      name: '專題學習方案',
+      description: '適合希望培養批判性思考與自主學習能力的學生',
+      feature1: '問題導向學習',
+      feature2: '個人化學習路徑',
+      feature3: '導師一對一指導',
+      feature4: '學習歷程記錄',
+      tag: '彈性學習安排',
+    },
+    program2: {
+      name: '專題協作方案',
+      description: '適合想要透過實作專題培養跨領域能力的學生',
+      feature1: '真實專題實作',
+      feature2: '跨學科整合',
+      feature3: '團隊協作訓練',
+      feature4: '成果展示機會',
+      tag: '最受歡迎的方案',
+    },
+    program3: {
+      name: '教師成長方案',
+      description: '適合希望提升教學實踐與專業發展的教育工作者',
+      feature1: '教學工作坊',
+      feature2: '教學社群支持',
+      feature3: '創新教學方法',
+      feature4: '專業認證課程',
+      tag: '彈性學習安排',
+    },
+    learnMore: '了解詳情',
+  },
+
+  // Testimonial Section
+  testimonial: {
+    label: '學習者的聲音',
+    facultyTitle: '卓越的師資團隊',
+    facultyDescription: '我們的教師團隊由經驗豐富的教育專家組成，64%擁有博士學位，致力於為學生提供最優質的教育體驗。',
+    teacherVoice: '教師心聲',
+    mainTeacherQuote: '在這裡，我們不僅傳授知識，更重要的是啟發學生的思考能力，培養他們成為終身學習者。',
+    mainTeacherName: '李明華 博士',
+    mainTeacherRole: '人文學科主任 · 哥倫比亞大學博士',
+    stats: {
+      phd: '博士學位教師',
+      experience: '平均教學經驗',
+      experienceValue: '15年',
+      ratio: '師生比例',
+    },
+    faculty1: {
+      name: '王教授',
+      title: '數學系主任',
+      degree: 'MIT 博士',
+    },
+    faculty2: {
+      name: '張博士',
+      title: '科學系主任',
+      degree: 'Stanford 博士',
+    },
+    faculty3: {
+      name: '陳老師',
+      title: '語言文學主任',
+      degree: 'Columbia 碩士',
+    },
+    mainQuote: '透過協作式學習，我不僅學會了知識，更學會了如何思考、如何與他人共同解決問題，這改變了我對學習的看法',
+    mainAuthor: '陳品妤',
+    mainRole: '高中三年級學生 · 專題學習優秀獎',
+    mainBadge: '專題學習認證',
+    quote1: '這裡的學習方式讓我找到了自己真正的興趣方向，老師們的引導讓我學會獨立思考',
+    author1: '林宇軒',
+    role1: '大學一年級',
+    quote2: '專題式學習讓我將課堂知識應用到實際問題中，這種學習體驗非常寶貴',
+    author2: '王雅婷',
+    role2: '高中二年級',
+    quote3: '作為教師，這個平台幫助我不斷更新教學方法，與其他教育者的交流讓我受益良多',
+    author3: '張老師',
+    role3: '國中教師',
+  },
+
+  // Community Section
+  community: {
+    title: '社區活動',
+    subtitle: '加入我們充滿活力的學習社群，參與豐富多元的活動，與志同道合的夥伴一起成長',
+    activity1: {
+      title: '每月學習工作坊',
+      date: '每月第一個週六',
+      description: '由資深教育者帶領，探討最新的教學方法與學習策略，與同儕交流實踐經驗',
+      tag: '定期活動',
+    },
+    activity2: {
+      title: '專題成果展示會',
+      date: '每季舉辦',
+      description: '學生展示專題學習成果，分享探究過程與心得，獲得專業回饋與建議',
+      tag: '季度盛會',
+    },
+    activity3: {
+      title: '教師社群聚會',
+      date: '每兩週一次',
+      description: '教育工作者的專業交流平台，分享教學創新、討論教育議題，共同成長',
+      tag: '社群交流',
+    },
+    activity4: {
+      title: '線上學習論壇',
+      date: '全年開放',
+      description: '24/7 線上社群平台，隨時提問、分享資源、參與討論，建立持續學習的網絡',
+      tag: '線上平台',
+    },
+    cta: '查看完整活動日曆',
+    learnMore: '了解更多',
+  },
+
+  // Join Us Section
+  joinUs: {
+    title: '加入我們',
+    description: '無論你是學生、教師還是教育工作者，我們都歡迎你加入這個充滿活力的學習社群。讓我們一起探索、成長、創新。',
+    benefit1: {
+      title: '創新學習方法',
+      description: '接觸最前沿的教育理念與實踐',
+    },
+    benefit2: {
+      title: '專業社群支持',
+      description: '與志同道合的夥伴交流成長',
+    },
+    benefit3: {
+      title: '成就認證',
+      description: '獲得專業學習認證與成果展示',
+    },
+    benefit4: {
+      title: '持續成長',
+      description: '終身學習資源與發展機會',
+    },
+    form: {
+      name: '姓名',
+      email: '電子郵件',
+      phone: '聯絡電話',
+      role: '身份',
+      interest: '感興趣的方案',
+      message: '留言',
+      namePlaceholder: '請輸入您的姓名',
+      emailPlaceholder: 'your@email.com',
+      phonePlaceholder: '0912-345-678',
+      messagePlaceholder: '告訴我們您的需求或問題（限500字）',
+      roleOptions: {
+        select: '請選擇身份',
+        student: '學生',
+        teacher: '教師',
+        parent: '家長',
+        educator: '教育工作者',
+        other: '其他',
+      },
+      interestOptions: {
+        select: '請選擇方案',
+        inquiry: '探究學習方案',
+        project: '專題協作方案',
+        teacher: '教師成長方案',
+        custom: '客製化方案',
+      },
+      submit: '提交申請',
+      submitting: '提交中...',
+      successMessage: '感謝您的申請！我們會盡快與您聯繫。',
+      errorMessage: '提交失敗，請稍後再試。',
+      required: '*',
+      charLimit: '限500字',
+    },
+  },
+
+  // Contact Section
+  contact: {
+    title: '聯絡我們',
+    description: '有任何問題或建議嗎？我們很樂意聽到您的聲音。請填寫表單，我們會盡快回覆您。',
+    email: {
+      title: '電子郵件',
+      value: 'info@learning-hub.com',
+    },
+    phone: {
+      title: '聯絡電話',
+      value: '02-1234-5678',
+      hours: '週一至週五 9:00-18:00',
+    },
+    address: {
+      title: '辦公地址',
+      value: '台北市信義區信義路五段7號',
+    },
+    hours: {
+      title: '服務時間',
+      weekday: '週一至週五 9:00-18:00',
+      weekend: '週六 10:00-17:00',
+    },
+    social: '關注我們',
+    form: {
+      name: '姓名',
+      email: '電子郵件',
+      subject: '主旨',
+      message: '訊息內容',
+      namePlaceholder: '請輸入您的姓名',
+      emailPlaceholder: 'your@email.com',
+      messagePlaceholder: '請詳細描述您的問題或需求（限500字）',
+      subjectOptions: {
+        select: '請選擇主旨',
+        course: '課程諮詢',
+        cooperation: '合作提案',
+        feedback: '意見回饋',
+        technical: '技術支援',
+        other: '其他問題',
+      },
+      submit: '發送訊息',
+      submitting: '發送中...',
+      successMessage: '訊息已成功發送！我們會盡快回覆您。',
+      errorMessage: '發送失敗，請稍後再試。',
+      required: '*',
+      charLimit: '限500字',
+    },
+  },
+
+  // CTA Section
+  cta: {
+    title1: '開始你的',
+    title2: '探究之旅',
+    description1: '與全球教育者共同探索',
+    description2: '協作式學習的無限可能',
+    button: '立即加入',
+  },
+
+  // Footer
+  footer: {
+    description: '探究式學習的線上高中，與哥倫比亞大學教師學院攜手，為全球學生提供優質教育，為教育工作者提供專業發展機會。',
+    quickLinks: '快速連結',
+    programs: '學習方案',
+    community: '社區活動',
+    about: '關於我們',
+    contact: '聯絡我們',
+    resources: '學習資源',
+    blog: '部落格',
+    faq: '常見問題',
+    support: '技術支援',
+    legal: '法律資訊',
+    privacy: '隱私政策',
+    terms: '服務條款',
+    copyright: '版權所有',
+    poweredBy: 'Powered by Readdy',
+    academicPartner: '學術合作夥伴：美國哥倫比亞大學教師學院教師發展中心',
+    newsletter: {
+      title: '訂閱資訊',
+      description: '訂閱我們的電子報，獲取最新課程資訊和教育資源。',
+      placeholder: '您的電子郵件',
+      success: '訂閱成功！',
+      error: '訂閱失敗，請稍後再試。',
+    },
+  },
+};

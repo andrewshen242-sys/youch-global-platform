@@ -1,0 +1,398 @@
+
+export const common = {
+  // Navigation
+  nav: {
+    home: '홈',
+    about: '소개',
+    academics: '학술 프로그램',
+    admissions: '입학 안내',
+    faculty: '교수진',
+    programs: '프로그램',
+    community: '커뮤니티',
+    contact: '문의',
+    apply: '지금 신청',
+  },
+
+  // Hero Section
+  hero: {
+    badge: '온라인 고등학교 · 교사 연수',
+    title: '프로젝트 기반 온라인 학습 아카데미',
+    subtitle: '우리는 프로젝트 기반 학습(PBL)을 통해 협력 학습을 핵심으로 하는 온라인 학습 허브를 구축하여 학생들의 학습 동기와 사고력을 키웁니다.',
+    partnership: {
+      title: '프로젝트 기반 온라인 학습 아카데미',
+      subtitle: '컬럼비아 대학교 티처스 칼리지 CPET의 학술 지원',
+    },
+    applyNow: '지금 신청',
+    learnMore: '자세히 보기',
+    scrollDown: '아래로 스크롤',
+    exploreCourses: '과정 탐색',
+    title1: '학습 영감',
+    title2: '협력적 성장',
+    title3: '미래 탐구',
+    description: '탐구 기반 학습과 프로젝트 기반 학습을 통해, 진정으로 의미 있는 학습은 타인과 함께 생각하고, 지속적으로 성찰하며, 지식을 세계를 이해하고 미래를 계획하는 능력으로 전환하는 것에서 비롯된다고 믿습니다',
+  },
+
+  // Features Section
+  features: {
+    title: '세 가지 학습 기둥',
+    academicTitle: '학술 프로그램 특색',
+    academicDescription: '우리의 커리큘럼은 최신 교육 연구를 기반으로 탐구 기반 학습과 프로젝트 기반 학습을 결합하여 학생들의 학술 능력과 평생 학습 기술을 개발합니다.',
+    feature1: {
+      title: '프로젝트 기반 학습',
+      description: '문제 중심 학습 접근법을 통해 학생들이 적극적으로 질문하고 깊이 생각하는 능력을 배양합니다',
+    },
+    feature2: {
+      title: '실세계 응용',
+      description: '실제 세계의 문제를 중심으로 실습을 통해 학습하고 학제간 통합 및 문제 해결 능력을 배양합니다',
+    },
+    feature3: {
+      title: '협력적 성장',
+      description: '동료 상호작용과 교사 지도를 통해 학습 커뮤니티를 구축하고 지식을 공동 구축하며 경험을 공유합니다',
+    },
+    standards: {
+      title: '엄격한 학술 기준',
+      description: '우리의 커리큘럼은 국제 교육 기준을 충족하며 컬럼비아 대학교 티처스 칼리지의 학술 인증을 받았습니다. 모든 과정은 박사 학위 또는 풍부한 교육 경험을 가진 교수진이 담당합니다.',
+      feature1: '동기식 온라인 토론 수업',
+      feature2: '소규모 수업 (평균 13명)',
+      feature3: '개인 맞춤 학술 지도',
+      feature4: '대학 진학 준비 과정',
+    },
+    subjects: {
+      title: '과정 분야',
+      humanities: '인문학',
+      science: '자연과학',
+      math: '수학',
+      socialScience: '사회과학',
+      language: '언어 및 문학',
+      arts: '예술',
+      computerScience: '컴퓨터 과학',
+      interdisciplinary: '학제간 연구',
+    },
+    learnMore: '자세히 보기',
+  },
+
+  // Mission Section
+  mission: {
+    title1: '우리의 사명',
+    title2: '과 비전',
+    partnership: {
+      badge: '평생 학술 파트너',
+      title: '컬럼비아 대학교 티처스 칼리지와의 제휴',
+      description: '컬럼비아 대학교 티처스 칼리지는 우리의 평생 학술 파트너로서 커리큘럼 설계, 교사 연수, 교육 연구에 전문적 지원과 학술 지도를 제공합니다.',
+    },
+    achievements: '우리의 성과',
+    stat1: '주도적 학습에 영감을 받은 학생',
+    stat2: '혁신적인 교육자',
+    stat3: '협력 프로젝트',
+    point1: '협력적이고 탐구 기반 학습을 통해 학생들의 주도적 학습과 깊은 사고 능력을 고취하고 학제간 이해와 문제 해결 능력을 배양합니다',
+    point2: '학생들이 명확한 학업 경로와 장기 경력 방향을 확립하도록 지원합니다',
+    point3: '교사의 전문적 성장과 교육 실천의 지속적인 혁신을 촉진합니다',
+    dualFocus: {
+      student: {
+        title: '학생 교육',
+        description: '7~12학년 학생들에게 엄격한 온라인 과정을 제공하며, 탐구 기반 학습과 프로젝트 연구를 통해 비판적 사고와 학술 능력을 키우고 대학 진학을 충분히 준비합니다.',
+      },
+      teacher: {
+        title: '교사 연수',
+        description: '컬럼비아 대학교 티처스 칼리지와 제휴하여 교육자를 위한 전문 개발 과정을 제공하고, 교육 혁신을 추진하며, 교육 실천을 향상시키고, 차세대 교육 리더를 양성합니다.',
+      },
+    },
+  },
+
+  // Programs Section
+  programs: {
+    title1: '당신의',
+    title2: '학습 여정을 선택하세요',
+    subtitle: '가장 적합한 학습 프로그램을 탐색하고 성장의 여정을 시작하세요',
+    admissionsTitle: '입학 및 등록 옵션',
+    admissionsDescription: '다양한 학습 요구를 충족하는 여러 입학 옵션을 제공합니다. 완전한 고등학교 교육을 원하는 학생이든, 전문 능력 향상을 원하는 교육자이든, 당신에게 맞는 프로그램이 있습니다.',
+    popularTag: '가장 인기',
+    fullTime: {
+      name: '풀타임 학생',
+      description: '정식 고등학교 졸업장을 취득할 수 있는 완전한 온라인 고등학교 커리큘럼',
+      feature1: '완전한 커리큘럼 체계',
+      feature2: '학술 지도',
+      feature3: '대학 진학 상담',
+      feature4: '졸업 증서',
+    },
+    elective: {
+      name: '선택 과목 학생',
+      description: '관심 있는 과정을 유연하게 선택하여 학습 경험을 풍부하게',
+      feature1: '유연한 과정 선택',
+      feature2: '학점 인증',
+      feature3: '전문 교수진',
+      feature4: '온라인 학습',
+    },
+    teacherTraining: {
+      name: '교사 연수 프로그램',
+      description: '컬럼비아 대학교 티처스 칼리지와 제휴한 전문 개발 과정',
+      feature1: '전문 인증',
+      feature2: '교육 혁신',
+      feature3: '학술 연구',
+      feature4: '국제 교류',
+    },
+    processTitle: '신청 절차',
+    process: {
+      step1: {
+        title: '신청서 제출',
+        desc: '온라인 신청서 작성',
+      },
+      step2: {
+        title: '서류 심사',
+        desc: '학업 성적 증명서 제출',
+      },
+      step3: {
+        title: '면접 평가',
+        desc: '온라인 면접 참여',
+      },
+      step4: {
+        title: '합격 통지',
+        desc: '입학 결정 수령',
+      },
+    },
+    program1: {
+      name: '탐구 학습 프로그램',
+      description: '비판적 사고와 자율 학습 능력을 개발하고자 하는 학생을 위한',
+      feature1: '문제 기반 학습',
+      feature2: '개인화된 학습 경로',
+      feature3: '일대일 멘토링',
+      feature4: '학습 포트폴리오',
+      tag: '유연한 학습',
+    },
+    program2: {
+      name: '프로젝트 협력 프로그램',
+      description: '실습 프로젝트를 통해 학제간 능력을 개발하고자 하는 학생을 위한',
+      feature1: '실제 프로젝트 실습',
+      feature2: '학제간 통합',
+      feature3: '팀 협력 교육',
+      feature4: '발표 기회',
+      tag: '가장 인기 있는',
+    },
+    program3: {
+      name: '교사 성장 프로그램',
+      description: '교육 실천과 전문 개발을 향상시키고자 하는 교육자를 위한',
+      feature1: '교육 워크숍',
+      feature2: '교육 커뮤니티 지원',
+      feature3: '혁신적인 교육 방법',
+      feature4: '전문 인증',
+      tag: '유연한 학습',
+    },
+    learnMore: '자세히 보기',
+  },
+
+  // Testimonial Section
+  testimonial: {
+    label: '학습자의 목소리',
+    facultyTitle: '우수한 교수진',
+    facultyDescription: '우리의 교수진은 경험 풍부한 교육 전문가로 구성되어 있으며, 64%가 박사 학위를 보유하고 학생들에게 최고 품질의 교육 경험을 제공하는 데 전념하고 있습니다.',
+    teacherVoice: '교사의 목소리',
+    mainTeacherQuote: '여기서 우리는 지식을 전달할 뿐만 아니라, 더 중요한 것은 학생들의 사고력을 자극하고 평생 학습자로 키우는 것입니다.',
+    mainTeacherName: '이명화 박사',
+    mainTeacherRole: '인문학과 주임 · 컬럼비아 대학교 박사',
+    stats: {
+      phd: '박사 학위 보유 교수',
+      experience: '평균 교육 경험',
+      experienceValue: '15년',
+      ratio: '학생 대 교사 비율',
+    },
+    faculty1: {
+      name: '왕 교수',
+      title: '수학과 주임',
+      degree: 'MIT 박사',
+    },
+    faculty2: {
+      name: '장 박사',
+      title: '과학과 주임',
+      degree: '스탠포드 박사',
+    },
+    faculty3: {
+      name: '진 선생님',
+      title: '언어문학 주임',
+      degree: '컬럼비아 석사',
+    },
+    mainQuote: '협력 학습을 통해 지식뿐만 아니라 생각하는 방법과 다른 사람들과 문제를 해결하는 방법을 배웠습니다. 이것이 학습에 대한 제 견해를 바꾸었습니다',
+    mainAuthor: '핀유 첸',
+    mainRole: '고등학교 3학년 · 프로젝트 학습 우수상',
+    mainBadge: '탐구 학습 인증',
+    quote1: '여기의 학습 접근법은 제가 진정한 관심사를 찾는 데 도움이 되었습니다. 교사의 지도로 독립적으로 생각하는 법을 배웠습니다',
+    author1: '유슈안 린',
+    role1: '대학교 1학년',
+    quote2: '프로젝트 기반 학습을 통해 교실 지식을 실제 문제에 적용할 수 있었습니다. 이 학습 경험은 매우 귀중합니다',
+    author2: '야팅 왕',
+    role2: '고등학교 2학년',
+    quote3: '교사로서 이 플랫폼은 교육 방법을 지속적으로 업데이트하는 데 도움이 됩니다. 다른 교육자들과의 교류에서 많은 것을 배웠습니다',
+    author3: '장 선생님',
+    role3: '중학교 교사',
+  },
+
+  // Community Section
+  community: {
+    title: '커뮤니티 활동',
+    subtitle: '활기찬 학습 커뮤니티에 참여하고 다양한 활동에 참여하며 같은 생각을 가진 파트너와 함께 성장하세요',
+    activity1: {
+      title: '월간 학습 워크숍',
+      date: '매월 첫째 토요일',
+      description: '선임 교육자가 주도하여 최신 교육 방법과 학습 전략을 탐구하고 동료와 실천 경험을 교환합니다',
+      tag: '정기 이벤트',
+    },
+    activity2: {
+      title: '프로젝트 발표회',
+      date: '분기별',
+      description: '학생들이 프로젝트 학습 성과를 발표하고 탐구 과정과 통찰력을 공유하며 전문적인 피드백을 받습니다',
+      tag: '분기별 이벤트',
+    },
+    activity3: {
+      title: '교사 커뮤니티 모임',
+      date: '격주',
+      description: '교육자를 위한 전문 교류 플랫폼으로 교육 혁신을 공유하고 교육 문제를 논의하며 함께 성장합니다',
+      tag: '커뮤니티 교류',
+    },
+    activity4: {
+      title: '온라인 학습 포럼',
+      date: '연중무휴',
+      description: '24시간 온라인 커뮤니티 플랫폼으로 질문하고 리소스를 공유하며 토론에 참여하고 지속적인 학습 네트워크를 구축합니다',
+      tag: '온라인 플랫폼',
+    },
+    cta: '전체 이벤트 캘린더 보기',
+    learnMore: '자세히 보기',
+  },
+
+  // Join Us Section
+  joinUs: {
+    title: '참여하기',
+    description: '학생, 교사 또는 교육자이든 이 활기찬 학습 커뮤니티에 참여하는 것을 환영합니다. 함께 탐구하고 성장하며 혁신합시다.',
+    benefit1: {
+      title: '혁신적인 학습 방법',
+      description: '최첨단 교육 개념과 실천에 접근',
+    },
+    benefit2: {
+      title: '전문 커뮤니티 지원',
+      description: '같은 생각을 가진 파트너와 교류하고 성장',
+    },
+    benefit3: {
+      title: '성취 인증',
+      description: '전문 학습 인증 및 성과 전시 획득',
+    },
+    benefit4: {
+      title: '지속적인 성장',
+      description: '평생 학습 리소스 및 개발 기회',
+    },
+    form: {
+      name: '이름',
+      email: '이메일',
+      phone: '전화',
+      role: '역할',
+      interest: '관심 프로그램',
+      message: '메시지',
+      namePlaceholder: '이름을 입력하세요',
+      emailPlaceholder: 'your@email.com',
+      phonePlaceholder: '0912-345-678',
+      messagePlaceholder: '필요 사항이나 질문을 알려주세요 (최대 500자)',
+      roleOptions: {
+        select: '역할 선택',
+        student: '학생',
+        teacher: '교사',
+        parent: '학부모',
+        educator: '교육자',
+        other: '기타',
+      },
+      interestOptions: {
+        select: '프로그램 선택',
+        inquiry: '탐구 학습 프로그램',
+        project: '프로젝트 협력 프로그램',
+        teacher: '교사 성장 프로그램',
+        custom: '맞춤 프로그램',
+      },
+      submit: '신청서 제출',
+      submitting: '제출 중...',
+      successMessage: '신청해 주셔서 감사합니다! 곧 연락드리겠습니다.',
+      errorMessage: '제출에 실패했습니다. 나중에 다시 시도하세요.',
+      required: '*',
+      charLimit: '최대 500자',
+    },
+  },
+
+  // Contact Section
+  contact: {
+    title: '문의하기',
+    description: '질문이나 제안이 있으신가요? 여러분의 의견을 듣고 싶습니다. 양식을 작성해 주시면 최대한 빨리 답변드리겠습니다.',
+    email: {
+      title: '이메일',
+      value: 'info@learning-hub.com',
+    },
+    phone: {
+      title: '전화',
+      value: '02-1234-5678',
+      hours: '월-금 9:00-18:00',
+    },
+    address: {
+      title: '사무실 주소',
+      value: '타이베이시 신이구 신이로 5단 7호',
+    },
+    hours: {
+      title: '서비스 시간',
+      weekday: '월-금 9:00-18:00',
+      weekend: '토 10:00-17:00',
+    },
+    social: '팔로우',
+    form: {
+      name: '이름',
+      email: '이메일',
+      subject: '제목',
+      message: '메시지',
+      namePlaceholder: '이름을 입력하세요',
+      emailPlaceholder: 'your@email.com',
+      messagePlaceholder: '질문이나 필요 사항을 자세히 설명해 주세요 (최대 500자)',
+      subjectOptions: {
+        select: '제목 선택',
+        course: '과정 문의',
+        cooperation: '협력 제안',
+        feedback: '피드백',
+        technical: '기술 지원',
+        other: '기타',
+      },
+      submit: '메시지 보내기',
+      submitting: '전송 중...',
+      successMessage: '메시지가 성공적으로 전송되었습니다! 곧 답변드리겠습니다.',
+      errorMessage: '전송에 실패했습니다. 나중에 다시 시도하세요.',
+      required: '*',
+      charLimit: '최대 500자',
+    },
+  },
+
+  // CTA Section
+  cta: {
+    title1: '당신의',
+    title2: '탐구 여정을 시작하세요',
+    description1: '전 세계 교육자들과 함께 탐구',
+    description2: '협력 학습의 무한한 가능성',
+    button: '지금 참여',
+  },
+
+  // Footer
+  footer: {
+    description: '탐구 기반 온라인 고등학교로서 컬럼비아 대학교 티처스 칼리지와 제휴하여 전 세계 학생들에게 양질의 교육을, 교육자들에게 전문적 성장 기회를 제공합니다.',
+    quickLinks: '빠른 링크',
+    programs: '프로그램',
+    community: '커뮤니티',
+    about: '소개',
+    contact: '문의',
+    resources: '리소스',
+    blog: '블로그',
+    faq: 'FAQ',
+    support: '지원',
+    legal: '법적 정보',
+    privacy: '개인정보 보호정책',
+    terms: '서비스 약관',
+    copyright: '모든 권리 보유',
+    poweredBy: 'Powered by Readdy',
+    academicPartner: '학술 파트너: 컬럼비아 대학교 티처스 칼리지 전문 교육 연수 센터',
+    newsletter: {
+      title: '구독',
+      description: '최신 과정 정보와 교육 리소스를 받으려면 뉴스레터를 구독하세요.',
+      placeholder: '이메일 주소',
+      success: '구독 성공!',
+      error: '구독에 실패했습니다. 나중에 다시 시도하세요.',
+    },
+  },
+};
