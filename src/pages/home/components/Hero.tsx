@@ -48,7 +48,8 @@ export default function Hero() {
             </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-white leading-tight mb-4 sm:mb-6">
-              {t('hero.title')}
+              <span className="block">{t('hero.title').split('<br />')[0]}</span>
+              <span className="block">{t('hero.title').split('<br />')[1]}</span>
             </h2>
             
             <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed mb-6 sm:mb-8 max-w-xl">

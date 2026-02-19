@@ -63,8 +63,8 @@ export default function HomePage() {
             <div className="flex items-center flex-1">
               <h1>
                 <a href={`/${currentLang}`} className="flex flex-col leading-tight cursor-pointer" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  <span className="text-[8px] sm:text-xs lg:text-sm font-semibold tracking-widest text-red-700">PROJECT-BASED</span>
-                  <span className="text-[11px] sm:text-sm lg:text-base font-bold tracking-wider text-gray-900">ONLINE LEARNING ACADEMY</span>
+                  <span className="text-[8px] sm:text-xs lg:text-sm font-semibold tracking-widest text-red-700 block">PROJECT-BASED</span>
+                  <span className="text-[11px] sm:text-sm lg:text-base font-bold tracking-wider text-gray-900 block">ONLINE LEARNING ACADEMY</span>
                 </a>
               </h1>
             </div>
