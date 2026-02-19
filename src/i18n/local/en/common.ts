@@ -285,7 +285,7 @@ export const common = {
     description: 'Have any questions or suggestions? We\'d love to hear from you. Fill out the form and we\'ll get back to you as soon as possible.',
     email: {
       title: 'Email',
-      value: 'info@youchonline.com',
+      value: 'info@learning-hub.com',
     },
     phone: {
       title: 'Phone',
