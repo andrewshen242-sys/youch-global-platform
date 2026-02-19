@@ -58,13 +58,13 @@ export default function HomePage() {
       {/* Navigation - Academic Style */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="flex items-center justify-between h-16 sm:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-20 gap-4">
             {/* Logo */}
-            <div className="flex items-center flex-1">
-              <h1>
+            <div className="flex items-center flex-shrink-0 min-w-0 overflow-hidden">
+              <h1 className="min-w-0">
                 <a href={`/${currentLang}`} className="flex flex-col leading-tight cursor-pointer" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                  <span className="text-[8px] sm:text-xs lg:text-sm font-semibold tracking-widest text-red-700 block">PROJECT-BASED</span>
-                  <span className="text-[11px] sm:text-sm lg:text-base font-bold tracking-wider text-gray-900 block">ONLINE LEARNING ACADEMY</span>
+                  <span className="text-[7px] sm:text-[9px] lg:text-sm font-semibold tracking-widest text-red-700 block whitespace-nowrap overflow-hidden text-ellipsis">PROJECT-BASED</span>
+                  <span className="text-[9px] sm:text-[11px] lg:text-base font-bold tracking-wider text-gray-900 block whitespace-nowrap overflow-hidden text-ellipsis">ONLINE LEARNING ACADEMY</span>
                 </a>
               </h1>
             </div>
@@ -72,13 +72,13 @@ export default function HomePage() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-gray-700 hover:text-red-700 cursor-pointer"
+              className="lg:hidden p-2 text-gray-700 hover:text-red-700 cursor-pointer flex-shrink-0"
             >
               <i className={`${isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'} text-2xl`}></i>
             </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8 flex-shrink-0">
               <a href="#about" className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.about')}</a>
               <a href="#academics" className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.academics')}</a>
               <a href="#admissions" className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.admissions')}</a>

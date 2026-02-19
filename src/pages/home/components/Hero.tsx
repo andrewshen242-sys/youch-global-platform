@@ -1,6 +1,4 @@
 
-import { useTranslation } from 'react-i18next';
-
 export default function Hero() {
   const { t } = useTranslation('common');
 
@@ -47,9 +45,9 @@ export default function Hero() {
               </span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light text-white leading-tight mb-4 sm:mb-6">
-              <span className="block">{t('hero.title').split('<br />')[0]}</span>
-              <span className="block">{t('hero.title').split('<br />')[1]}</span>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-light text-white leading-tight mb-4 sm:mb-6">
+              <span className="block">Project-Based</span>
+              <span className="block">Online Learning Academy</span>
             </h2>
             
             <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed mb-6 sm:mb-8 max-w-xl">
