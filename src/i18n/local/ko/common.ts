@@ -318,7 +318,7 @@ export const common = {
     description: '질문이나 제안이 있으신가요? 여러분의 의견을 듣고 싶습니다. 양식을 작성해 주시면 최대한 빨리 답변드리겠습니다.',
     email: {
       title: '이메일',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: '전화',

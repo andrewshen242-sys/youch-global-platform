@@ -353,7 +353,7 @@ export const common = {
       '¿Tienes alguna pregunta o sugerencia? Nos encantaría escucharte. Completa el formulario y te responderemos lo antes posible.',
     email: {
       title: 'Correo Electrónico',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: 'Teléfono',

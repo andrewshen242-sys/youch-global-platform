@@ -339,7 +339,7 @@ export const common = {
       'ご質問やご提案はありますか？お気軽にお問い合わせください。フォームに記入していただければ、できるだけ早くご返信いたします。',
     email: {
       title: 'メール',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: '電話',

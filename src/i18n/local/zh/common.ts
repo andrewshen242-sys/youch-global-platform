@@ -312,7 +312,7 @@ export const common = {
     description: '有任何問題或建議嗎？我們很樂意聽到您的聲音。請填寫表單，我們會盡快回覆您。',
     email: {
       title: '電子郵件',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: '聯絡電話',

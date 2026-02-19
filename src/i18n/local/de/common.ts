@@ -357,7 +357,7 @@ export const common = {
       'Haben Sie Fragen oder Anregungen? Wir w\u00FCrden gerne von Ihnen h\u00F6ren. F\u00FCllen Sie das Formular aus und wir werden uns so schnell wie m\u00F6glich bei Ihnen melden.',
     email: {
       title: 'E-Mail',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: 'Telefon',

@@ -355,7 +355,7 @@ export const common = {
       'Avez-vous des questions ou des suggestions ? Nous serions ravis de vous entendre. Remplissez le formulaire et nous vous r\u00E9pondrons d\u00E8s que possible.',
     email: {
       title: 'Email',
-      value: 'info@learning-hub.com',
+      value: 'info@youchonline.com',
     },
     phone: {
       title: 'T\u00E9l\u00E9phone',
