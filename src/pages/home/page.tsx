@@ -74,17 +74,17 @@ export default function HomePage() {
                   <i className="ri-arrow-down-s-line ml-1"></i>
                 </button>
                 <div className="absolute top-full right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all max-h-96 overflow-y-auto">
-                  <button onClick={() => changeLanguage('en')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-t-lg">English</button>
-                  <button onClick={() => changeLanguage('zh')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">中文</button>
-                  <button onClick={() => changeLanguage('es')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">Español</button>
-                  <button onClick={() => changeLanguage('fr')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">Français</button>
-                  <button onClick={() => changeLanguage('de')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">Deutsch</button>
-                  <button onClick={() => changeLanguage('it')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">Italiano</button>
-                  <button onClick={() => changeLanguage('ja')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">日本語</button>
-                  <button onClick={() => changeLanguage('ko')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">한국어</button>
-                  <button onClick={() => changeLanguage('vi')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">Tiếng Việt</button>
-                  <button onClick={() => changeLanguage('th')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">ภาษาไทย</button>
-                  <button onClick={() => changeLanguage('ms')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-b-lg">Bahasa Melayu</button>
+                  <button onClick={() => changeLanguage('en')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-t-lg">{t('nav.languages.en')}</button>
+                  <button onClick={() => changeLanguage('zh')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.zh')}</button>
+                  <button onClick={() => changeLanguage('es')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.es')}</button>
+                  <button onClick={() => changeLanguage('fr')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.fr')}</button>
+                  <button onClick={() => changeLanguage('de')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.de')}</button>
+                  <button onClick={() => changeLanguage('it')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.it')}</button>
+                  <button onClick={() => changeLanguage('ja')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.ja')}</button>
+                  <button onClick={() => changeLanguage('ko')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.ko')}</button>
+                  <button onClick={() => changeLanguage('vi')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.vi')}</button>
+                  <button onClick={() => changeLanguage('th')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.th')}</button>
+                  <button onClick={() => changeLanguage('ms')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-b-lg">{t('nav.languages.ms')}</button>
                 </div>
               </div>
 
@@ -107,19 +107,19 @@ export default function HomePage() {
             
             {/* Mobile Language Selector */}
             <div className="pt-3 border-t border-gray-200">
-              <div className="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">{t('nav.language') || 'Language'}</div>
+              <div className="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">{t('nav.language')}</div>
               <div className="grid grid-cols-2 gap-2">
-                <button onClick={() => { changeLanguage('en'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">English</button>
-                <button onClick={() => { changeLanguage('zh'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">中文</button>
-                <button onClick={() => { changeLanguage('es'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Español</button>
-                <button onClick={() => { changeLanguage('fr'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Français</button>
-                <button onClick={() => { changeLanguage('de'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Deutsch</button>
-                <button onClick={() => { changeLanguage('it'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Italiano</button>
-                <button onClick={() => { changeLanguage('ja'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">日本語</button>
-                <button onClick={() => { changeLanguage('ko'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">한국어</button>
-                <button onClick={() => { changeLanguage('vi'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Tiếng Việt</button>
-                <button onClick={() => { changeLanguage('th'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">ภาษาไทย</button>
-                <button onClick={() => { changeLanguage('ms'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">Bahasa Melayu</button>
+                <button onClick={() => { changeLanguage('en'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.en')}</button>
+                <button onClick={() => { changeLanguage('zh'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.zh')}</button>
+                <button onClick={() => { changeLanguage('es'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.es')}</button>
+                <button onClick={() => { changeLanguage('fr'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.fr')}</button>
+                <button onClick={() => { changeLanguage('de'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.de')}</button>
+                <button onClick={() => { changeLanguage('it'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.it')}</button>
+                <button onClick={() => { changeLanguage('ja'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ja')}</button>
+                <button onClick={() => { changeLanguage('ko'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ko')}</button>
+                <button onClick={() => { changeLanguage('vi'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.vi')}</button>
+                <button onClick={() => { changeLanguage('th'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.th')}</button>
+                <button onClick={() => { changeLanguage('ms'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ms')}</button>
               </div>
             </div>
 

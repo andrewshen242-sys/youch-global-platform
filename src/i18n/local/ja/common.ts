@@ -1,4 +1,3 @@
-
 export const common = {
   // Navigation
   nav: {
@@ -10,7 +9,21 @@ export const common = {
     programs: 'プログラム',
     community: 'コミュニティ',
     contact: 'お問い合わせ',
-    apply: '今すぐ申請',
+    apply: '今すぐ申し込む',
+    language: '言語',
+    languages: {
+      en: '英語',
+      zh: '中国語',
+      es: 'スペイン語',
+      fr: 'フランス語',
+      de: 'ドイツ語',
+      it: 'イタリア語',
+      ja: '日本語',
+      ko: '韓国語',
+      vi: 'ベトナム語',
+      th: 'タイ語',
+      ms: 'マレー語',
+    },
   },
 
   // Hero Section

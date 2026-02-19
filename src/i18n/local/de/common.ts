@@ -1,16 +1,29 @@
-
 export const common = {
   // Navigation
   nav: {
     home: 'Startseite',
-    about: '\u00DCber Uns',
-    academics: 'Akademische Programme',
-    admissions: 'Zulassung',
-    faculty: 'Lehrkr\u00E4fte',
+    about: 'Über uns',
+    academics: 'Akademiker',
+    admissions: 'Zulassungen',
+    faculty: 'Fakultät',
     programs: 'Programme',
     community: 'Gemeinschaft',
     contact: 'Kontakt',
-    apply: 'Jetzt Bewerben',
+    apply: 'Jetzt bewerben',
+    language: 'Sprache',
+    languages: {
+      en: 'Englisch',
+      zh: 'Chinesisch',
+      es: 'Spanisch',
+      fr: 'Französisch',
+      de: 'Deutsch',
+      it: 'Italienisch',
+      ja: 'Japanisch',
+      ko: 'Koreanisch',
+      vi: 'Vietnamesisch',
+      th: 'Thailändisch',
+      ms: 'Malaiisch',
+    },
   },
 
   // Hero Section

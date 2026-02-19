@@ -1,4 +1,3 @@
-
 export const common = {
   // Navigation
   nav: {
@@ -9,8 +8,22 @@ export const common = {
     faculty: '교수진',
     programs: '프로그램',
     community: '커뮤니티',
-    contact: '문의',
+    contact: '문의하기',
     apply: '지금 신청',
+    language: '언어',
+    languages: {
+      en: '영어',
+      zh: '중국어',
+      es: '스페인어',
+      fr: '프랑스어',
+      de: '독일어',
+      it: '이탈리아어',
+      ja: '일본어',
+      ko: '한국어',
+      vi: '베트남어',
+      th: '태국어',
+      ms: '말레이어',
+    },
   },
 
   // Hero Section

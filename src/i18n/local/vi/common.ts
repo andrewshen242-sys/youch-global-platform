@@ -1,4 +1,3 @@
-
 export const common = {
   // Navigation
   nav: {
@@ -11,6 +10,20 @@ export const common = {
     community: 'Cộng đồng',
     contact: 'Liên hệ',
     apply: 'Đăng ký ngay',
+    language: 'Ngôn ngữ',
+    languages: {
+      en: 'Tiếng Anh',
+      zh: 'Tiếng Trung',
+      es: 'Tiếng Tây Ban Nha',
+      fr: 'Tiếng Pháp',
+      de: 'Tiếng Đức',
+      it: 'Tiếng Ý',
+      ja: 'Tiếng Nhật',
+      ko: 'Tiếng Hàn',
+      vi: 'Tiếng Việt',
+      th: 'Tiếng Thái',
+      ms: 'Tiếng Mã Lai',
+    },
   },
 
   // Hero Section
@@ -228,7 +241,7 @@ export const common = {
 
   // Join Us Section
   joinUs: {
-    title: 'Tham gia Cùng Chúng tôi',
+    title: 'Tham gia cùng Chúng tôi',
     description: 'Dù bạn là học sinh, giáo viên hay nhà giáo dục, chúng tôi đều chào đón bạn tham gia cộng đồng học tập sôi động này. Hãy cùng khám phá, phát triển và đổi mới.',
     benefit1: {
       title: 'Phương pháp Học tập Sáng tạo',

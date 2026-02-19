@@ -1,4 +1,3 @@
-
 export const common = {
   // Navigation
   nav: {
@@ -11,6 +10,20 @@ export const common = {
     community: 'ชุมชน',
     contact: 'ติดต่อเรา',
     apply: 'สมัครเลย',
+    language: 'ภาษา',
+    languages: {
+      en: 'อังกฤษ',
+      zh: 'จีน',
+      es: 'สเปน',
+      fr: 'ฝรั่งเศส',
+      de: 'เยอรมัน',
+      it: 'อิตาลี',
+      ja: 'ญี่ปุ่น',
+      ko: 'เกาหลี',
+      vi: 'เวียดนาม',
+      th: 'ไทย',
+      ms: 'มาเลย์',
+    },
   },
 
   // Hero Section

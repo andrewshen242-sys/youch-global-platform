@@ -1,4 +1,3 @@
-
 export const common = {
   // Navigation
   nav: {
@@ -11,6 +10,20 @@ export const common = {
     community: 'Komuniti',
     contact: 'Hubungi Kami',
     apply: 'Mohon Sekarang',
+    language: 'Bahasa',
+    languages: {
+      en: 'Bahasa Inggeris',
+      zh: 'Bahasa Cina',
+      es: 'Bahasa Sepanyol',
+      fr: 'Bahasa Perancis',
+      de: 'Bahasa Jerman',
+      it: 'Bahasa Itali',
+      ja: 'Bahasa Jepun',
+      ko: 'Bahasa Korea',
+      vi: 'Bahasa Vietnam',
+      th: 'Bahasa Thai',
+      ms: 'Bahasa Melayu',
+    },
   },
 
   // Hero Section
