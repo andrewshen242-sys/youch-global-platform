@@ -151,14 +151,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2024 Online High School. {t('footer.copyright')}</p>
+            <p>&copy; 2020 CPET-YOUCH Academy. {t('footer.copyright')}</p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.privacy')}</a>
-              <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.terms')}</a>
               <span className="hover:text-white transition-colors">Powered by CPET&YOUCH</span>
-              <a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer">
-                {t('footer.poweredBy')}
-              </a>
             </div>
           </div>
         </div>
