@@ -453,4 +453,13 @@ export const common = {
       error: 'Abonnement fehlgeschlagen, bitte versuchen Sie es sp\u00E4ter erneut.',
     },
   },
+
+  // SEO
+  seo: {
+    title: 'Projektbasiertes Online-Gymnasium | Partnerschaft mit Teachers College Columbia | Bildung und Lehrerfortbildung',
+    description: 'Ein forschungsbasiertes Online-Gymnasium in Partnerschaft mit dem Teachers College der Columbia University, das strenge Online-Kurse f\u00FCr Sch\u00FCler der Klassen 7-12 und professionelle Entwicklung f\u00FCr P\u00E4dagogen durch projektbasiertes Lernen (PBL) anbietet.',
+    keywords: 'Online-Gymnasium,forschungsbasiertes Lernen,projektbasiertes Lernen,PBL,Teachers College Columbia,Lehrerfortbildung,Online-Bildung,akademische Kurse,professionelle Entwicklung,internationale Bildung',
+    ogTitle: 'Projektbasiertes Online-Gymnasium | Teachers College Columbia',
+    ogDescription: 'In Partnerschaft mit dem Teachers College der Columbia University f\u00FCr qualitativ hochwertige Bildung und Lehrerfortbildung',
+  },
 };

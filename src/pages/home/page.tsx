@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -91,7 +90,7 @@ export default function HomePage() {
               <div className="relative group">
                 <button className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer flex items-center">
                   <i className="ri-global-line mr-1.5"></i>
-                  {currentNative}
+                  <span>{currentNative}</span>
                   <i className="ri-arrow-down-s-line ml-1"></i>
                 </button>
                 <div className="absolute top-full right-0 mt-2 w-44 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all max-h-96 overflow-y-auto">

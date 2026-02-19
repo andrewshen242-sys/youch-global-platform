@@ -377,4 +377,13 @@ export const common = {
       error: 'Langganan gagal, sila cuba lagi kemudian.',
     },
   },
+
+  // SEO
+  seo: {
+    title: 'Sekolah Menengah Dalam Talian Berasaskan Projek | Kerjasama dengan Teachers College Columbia | Pendidikan Pelajar & Latihan Guru',
+    description: 'Sekolah menengah dalam talian berasaskan inkuiri, bekerjasama dengan Teachers College Universiti Columbia, menyediakan kursus dalam talian yang ketat untuk pelajar gred 7-12 dan latihan profesional untuk pendidik melalui Pembelajaran Berasaskan Projek (PBL).',
+    keywords: 'sekolah menengah dalam talian,pembelajaran inkuiri,pembelajaran berasaskan projek,PBL,Teachers College Columbia,latihan guru,pendidikan dalam talian,kursus akademik,pembangunan profesional,pendidikan antarabangsa',
+    ogTitle: 'Sekolah Menengah Dalam Talian Berasaskan Projek | Teachers College Columbia',
+    ogDescription: 'Bekerjasama dengan Teachers College Universiti Columbia untuk menyediakan pendidikan berkualiti dan peluang pembangunan profesional untuk pendidik',
+  },
 };

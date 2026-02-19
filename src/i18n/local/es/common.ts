@@ -447,4 +447,13 @@ export const common = {
       error: 'Error en la suscripción, por favor inténtalo de nuevo más tarde.',
     },
   },
+
+  // SEO
+  seo: {
+    title: 'Escuela Secundaria en L\u00EDnea Basada en Proyectos | Asociaci\u00F3n con Teachers College de Columbia | Educaci\u00F3n Estudiantil y Formaci\u00F3n Docente',
+    description: 'Una escuela secundaria en l\u00EDnea basada en la investigaci\u00F3n, en asociaci\u00F3n con el Teachers College de la Universidad de Columbia, ofreciendo cursos rigurosos para estudiantes de 7\u00BA a 12\u00BA grado y formaci\u00F3n profesional para educadores a trav\u00E9s del aprendizaje basado en proyectos (ABP).',
+    keywords: 'escuela secundaria en l\u00EDnea,aprendizaje por investigaci\u00F3n,aprendizaje basado en proyectos,ABP,Teachers College Columbia,formaci\u00F3n docente,educaci\u00F3n en l\u00EDnea,cursos acad\u00E9micos,desarrollo profesional docente,educaci\u00F3n internacional',
+    ogTitle: 'Escuela Secundaria en L\u00EDnea Basada en Proyectos | Teachers College de Columbia',
+    ogDescription: 'En asociaci\u00F3n con el Teachers College de la Universidad de Columbia para ofrecer educaci\u00F3n de calidad y desarrollo profesional docente',
+  },
 };

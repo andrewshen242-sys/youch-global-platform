@@ -155,6 +155,7 @@ export default function Footer() {
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.privacy')}</a>
               <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.terms')}</a>
+              <span className="hover:text-white transition-colors">Powered by CPET&YOUCH</span>
               <a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer">
                 {t('footer.poweredBy')}
               </a>

@@ -456,4 +456,13 @@ export const common = {
       error: 'Iscrizione fallita, riprova più tardi.',
     },
   },
+
+  // SEO
+  seo: {
+    title: 'Liceo Online Basato su Progetti | Partnership con Teachers College Columbia | Educazione e Formazione',
+    description: 'Un liceo online basato sull\'indagine, in partnership con il Teachers College della Columbia University, che offre corsi rigorosi per studenti dalla 7\u00AA alla 12\u00AA classe e formazione professionale per educatori attraverso l\'apprendimento basato su progetti (PBL).',
+    keywords: 'liceo online,apprendimento per indagine,apprendimento basato su progetti,PBL,Teachers College Columbia,formazione insegnanti,educazione online,corsi accademici,sviluppo professionale,educazione internazionale',
+    ogTitle: 'Liceo Online Basato su Progetti | Teachers College Columbia',
+    ogDescription: 'In partnership con il Teachers College della Columbia University per offrire educazione di qualit\u00E0 e formazione professionale per insegnanti',
+  },
 };

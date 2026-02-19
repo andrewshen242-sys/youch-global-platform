@@ -33,7 +33,7 @@ export const common = {
     subtitle: 'We are dedicated to creating a collaborative learning hub through project-based learning (PBL), inspiring students\' motivation and critical thinking abilities.',
     partnership: {
       title: 'Project-Based Online Learning Academy',
-      subtitle: 'Academic support provided by CPET at Teachers of College of Columbia University',
+      subtitle: 'Academic support provided by CPET at Teachers College, Columbia University',
     },
     applyNow: 'Apply Now',
     learnMore: 'Learn More',
@@ -376,5 +376,14 @@ export const common = {
       success: 'Subscription successful!',
       error: 'Subscription failed, please try again later.',
     },
+  },
+
+  // SEO
+  seo: {
+    title: 'Project-Based Online High School | Columbia University Teachers College Partnership | Student Education & Teacher Training',
+    description: 'An inquiry-based online high school partnering with Teachers College, Columbia University, offering rigorous online courses for grades 7-12 and professional development training for educators through project-based learning (PBL).',
+    keywords: 'online high school,inquiry-based learning,project-based learning,PBL,Columbia University Teachers College,teacher training,online education,academic courses,teacher professional development,international education',
+    ogTitle: 'Project-Based Online High School | Columbia University Teachers College Partnership',
+    ogDescription: 'Partnering with Teachers College, Columbia University to provide quality online education for students and professional development for teachers',
   },
 };

@@ -38,6 +38,7 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script 
+      id="readdy-agent-widget"
       src="https://readdy.ai/api/public/assistant/widget?projectId=69f35718-340b-450b-8fa7-1fa3d144200d"
       mode="hybrid"
       voice-show-transcript="true"
@@ -50,5 +51,82 @@
       empty-chat-message="您好！歡迎來到 Project-Based Online Learning Academy，有任何關於課程、招生或教師培訓的問題，請隨時詢問！"
       defer
     ></script>
+    <script>
+      // Update Readdy Agent widget language based on current route
+      function updateWidgetLanguage() {
+        const path = window.location.pathname;
+        const lang = path.split('/')[1] || 'en';
+        
+        const widgetScript = document.getElementById('readdy-agent-widget');
+        if (!widgetScript) return;
+        
+        const translations = {
+          en: {
+            mainLabel: 'Talk with Us',
+            emptyChatMessage: 'Hello! Welcome to Project-Based Online Learning Academy. Feel free to ask any questions about courses, admissions, or teacher training!'
+          },
+          zh: {
+            mainLabel: '與我們對話',
+            emptyChatMessage: '您好！歡迎來到 Project-Based Online Learning Academy，有任何關於課程、招生或教師培訓的問題，請隨時詢問！'
+          },
+          es: {
+            mainLabel: 'Habla con Nosotros',
+            emptyChatMessage: '¡Hola! Bienvenido a Project-Based Online Learning Academy. ¡No dudes en hacer cualquier pregunta sobre cursos, admisiones o formación de profesores!'
+          },
+          fr: {
+            mainLabel: 'Parlez avec Nous',
+            emptyChatMessage: 'Bonjour ! Bienvenue à Project-Based Online Learning Academy. N\'hésitez pas à poser des questions sur les cours, les admissions ou la formation des enseignants !'
+          },
+          de: {
+            mainLabel: 'Sprechen Sie mit Uns',
+            emptyChatMessage: 'Hallo! Willkommen bei der Project-Based Online Learning Academy. Stellen Sie gerne Fragen zu Kursen, Zulassungen oder Lehrerausbildung!'
+          },
+          it: {
+            mainLabel: 'Parla con Noi',
+            emptyChatMessage: 'Ciao! Benvenuto alla Project-Based Online Learning Academy. Sentiti libero di fare domande su corsi, ammissioni o formazione degli insegnanti!'
+          },
+          ja: {
+            mainLabel: 'お話しください',
+            emptyChatMessage: 'こんにちは！Project-Based Online Learning Academyへようこそ。コース、入学、教師研修について、お気軽にご質問ください！'
+          },
+          ko: {
+            mainLabel: '문의하기',
+            emptyChatMessage: '안녕하세요! Project-Based Online Learning Academy에 오신 것을 환영합니다. 과정, 입학 또는 교사 연수에 대해 궁금한 점이 있으시면 언제든지 문의해 주세요!'
+          },
+          vi: {
+            mainLabel: 'Trò Chuyện với Chúng Tôi',
+            emptyChatMessage: 'Xin chào! Chào mừng đến với Project-Based Online Learning Academy. Hãy thoải mái đặt bất kỳ câu hỏi nào về khóa học, tuyển sinh hoặc đào tạo giáo viên!'
+          },
+          th: {
+            mainLabel: 'พูดคุยกับเรา',
+            emptyChatMessage: 'สวัสดี! ยินดีต้อนรับสู่ Project-Based Online Learning Academy สอบถามเกี่ยวกับหลักสูตร การรับสมัคร หรือการฝึกอบรมครูได้ตามสบาย!'
+          },
+          ms: {
+            mainLabel: 'Bercakap dengan Kami',
+            emptyChatMessage: 'Hello! Selamat datang ke Project-Based Online Learning Academy. Sila tanya apa-apa soalan tentang kursus, kemasukan, atau latihan guru!'
+          }
+        };
+        
+        const translation = translations[lang] || translations.en;
+        widgetScript.setAttribute('main-label', translation.mainLabel);
+        widgetScript.setAttribute('empty-chat-message', translation.emptyChatMessage);
+      }
+      
+      // Update on initial load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', updateWidgetLanguage);
+      } else {
+        updateWidgetLanguage();
+      }
+      
+      // Update on route change
+      let lastPath = window.location.pathname;
+      setInterval(() => {
+        if (window.location.pathname !== lastPath) {
+          lastPath = window.location.pathname;
+          updateWidgetLanguage();
+        }
+      }, 100);
+    </script>
   </body>
 </html>

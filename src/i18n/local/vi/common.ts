@@ -377,4 +377,13 @@ export const common = {
       error: 'Đăng ký thất bại, vui lòng thử lại sau.',
     },
   },
+
+  // SEO
+  seo: {
+    title: 'Tr\u01B0\u1EDDng Trung h\u1ECDc Tr\u1EF1c tuy\u1EBFn D\u1EF1a tr\u00EAn D\u1EF1 \u00E1n | H\u1EE3p t\u00E1c v\u1EDBi Teachers College Columbia | Gi\u00E1o d\u1EE5c H\u1ECDc sinh & \u0110\u00E0o t\u1EA1o Gi\u00E1o vi\u00EAn',
+    description: 'Tr\u01B0\u1EDDng trung h\u1ECDc tr\u1EF1c tuy\u1EBFn theo ph\u01B0\u01A1ng ph\u00E1p kh\u00E1m ph\u00E1, h\u1EE3p t\u00E1c v\u1EDBi Tr\u01B0\u1EDDng S\u01B0 ph\u1EA1m \u0110\u1EA1i h\u1ECDc Columbia, cung c\u1EA5p kh\u00F3a h\u1ECDc tr\u1EF1c tuy\u1EBFn nghi\u00EAm ng\u1EB7t cho h\u1ECDc sinh l\u1EDBp 7-12 v\u00E0 \u0111\u00E0o t\u1EA1o chuy\u00EAn m\u00F4n cho nh\u00E0 gi\u00E1o d\u1EE5c th\u00F4ng qua h\u1ECDc t\u1EADp d\u1EF1a tr\u00EAn d\u1EF1 \u00E1n (PBL).',
+    keywords: 'tr\u01B0\u1EDDng trung h\u1ECDc tr\u1EF1c tuy\u1EBFn,h\u1ECDc t\u1EADp kh\u00E1m ph\u00E1,h\u1ECDc t\u1EADp d\u1EF1a tr\u00EAn d\u1EF1 \u00E1n,PBL,Teachers College Columbia,\u0111\u00E0o t\u1EA1o gi\u00E1o vi\u00EAn,gi\u00E1o d\u1EE5c tr\u1EF1c tuy\u1EBFn,kh\u00F3a h\u1ECDc h\u1ECDc thu\u1EADt,ph\u00E1t tri\u1EC3n chuy\u00EAn m\u00F4n,gi\u00E1o d\u1EE5c qu\u1ED1c t\u1EBF',
+    ogTitle: 'Tr\u01B0\u1EDDng Trung h\u1ECDc Tr\u1EF1c tuy\u1EBFn D\u1EF1a tr\u00EAn D\u1EF1 \u00E1n | Teachers College Columbia',
+    ogDescription: 'H\u1EE3p t\u00E1c v\u1EDBi Tr\u01B0\u1EDDng S\u01B0 ph\u1EA1m \u0110\u1EA1i h\u1ECDc Columbia \u0111\u1EC3 cung c\u1EA5p gi\u00E1o d\u1EE5c ch\u1EA5t l\u01B0\u1EE3ng v\u00E0 c\u01A1 h\u1ED9i ph\u00E1t tri\u1EC3n chuy\u00EAn m\u00F4n cho nh\u00E0 gi\u00E1o d\u1EE5c',
+  },
 };

@@ -448,5 +448,14 @@ export const common = {
       success: 'Abonnement r\u00E9ussi !',
       error: '\u00C9chec de l\'abonnement, veuillez r\u00E9essayer plus tard.',
     },
-  }
+  },
+
+  // SEO
+  seo: {
+    title: 'Lyc\u00E9e en Ligne par Projets | Partenariat avec Teachers College de Columbia | \u00C9ducation et Formation',
+    description: 'Un lyc\u00E9e en ligne bas\u00E9 sur l\'enqu\u00EAte, en partenariat avec le Teachers College de l\'Universit\u00E9 Columbia, offrant des cours rigoureux pour les \u00E9l\u00E8ves de la 7e \u00E0 la 12e ann\u00E9e et une formation professionnelle pour les \u00E9ducateurs.',
+    keywords: 'lyc\u00E9e en ligne,apprentissage par enqu\u00EAte,apprentissage par projets,PBL,Teachers College Columbia,formation des enseignants,\u00E9ducation en ligne,cours acad\u00E9miques,d\u00E9veloppement professionnel,\u00E9ducation internationale',
+    ogTitle: 'Lyc\u00E9e en Ligne par Projets | Teachers College de Columbia',
+    ogDescription: 'En partenariat avec le Teachers College de l\'Universit\u00E9 Columbia pour offrir une \u00E9ducation de qualit\u00E9 et le d\u00E9veloppement professionnel des enseignants',
+  },
 };
