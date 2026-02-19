@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useParams, useNavigate } from 'react-router-dom';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Mission from './components/Mission';
@@ -12,10 +13,27 @@ import Contact from './components/Contact';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
+const LANGUAGE_ORDER = [
+  { code: 'en', native: 'English' },
+  { code: 'zh', native: '中文' },
+  { code: 'es', native: 'Español' },
+  { code: 'fr', native: 'Français' },
+  { code: 'de', native: 'Deutsch' },
+  { code: 'it', native: 'Italiano' },
+  { code: 'ja', native: '日本語' },
+  { code: 'ko', native: '한국어' },
+  { code: 'vi', native: 'Tiếng Việt' },
+  { code: 'th', native: 'ภาษาไทย' },
+  { code: 'ms', native: 'Bahasa Melayu' },
+];
+
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t, i18n } = useTranslation('common');
+  const { t } = useTranslation('common');
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
+  const currentLang = lang || 'en';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,13 +43,16 @@ export default function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+  const switchLanguage = (code: string) => {
+    navigate(`/${code}`);
+    setIsMobileMenuOpen(false);
   };
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+
+  const currentNative = LANGUAGE_ORDER.find(l => l.code === currentLang)?.native || 'English';
 
   return (
     <div className="min-h-screen bg-white">
@@ -42,7 +63,7 @@ export default function HomePage() {
             {/* Logo */}
             <div className="flex items-center flex-1">
               <h1>
-                <a href="/" className="flex flex-col leading-tight cursor-pointer" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                <a href={`/${currentLang}`} className="flex flex-col leading-tight cursor-pointer" style={{ fontFamily: "'Montserrat', sans-serif" }}>
                   <span className="text-[8px] sm:text-xs lg:text-sm font-semibold tracking-widest text-red-700">PROJECT-BASED</span>
                   <span className="text-[11px] sm:text-sm lg:text-base font-bold tracking-wider text-gray-900">ONLINE LEARNING ACADEMY</span>
                 </a>
@@ -66,25 +87,28 @@ export default function HomePage() {
               <a href="#community" className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.community')}</a>
               <a href="#contact" className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.contact')}</a>
               
-              {/* Language Selector */}
+              {/* Language Selector - Link Based */}
               <div className="relative group">
                 <button className="text-sm font-medium text-gray-700 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer flex items-center">
                   <i className="ri-global-line mr-1.5"></i>
-                  {i18n.language.toUpperCase()}
+                  {currentNative}
                   <i className="ri-arrow-down-s-line ml-1"></i>
                 </button>
-                <div className="absolute top-full right-0 mt-2 w-40 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all max-h-96 overflow-y-auto">
-                  <button onClick={() => changeLanguage('en')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-t-lg">{t('nav.languages.en')}</button>
-                  <button onClick={() => changeLanguage('zh')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.zh')}</button>
-                  <button onClick={() => changeLanguage('es')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.es')}</button>
-                  <button onClick={() => changeLanguage('fr')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.fr')}</button>
-                  <button onClick={() => changeLanguage('de')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.de')}</button>
-                  <button onClick={() => changeLanguage('it')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.it')}</button>
-                  <button onClick={() => changeLanguage('ja')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.ja')}</button>
-                  <button onClick={() => changeLanguage('ko')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.ko')}</button>
-                  <button onClick={() => changeLanguage('vi')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.vi')}</button>
-                  <button onClick={() => changeLanguage('th')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer">{t('nav.languages.th')}</button>
-                  <button onClick={() => changeLanguage('ms')} className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 transition-colors whitespace-nowrap cursor-pointer rounded-b-lg">{t('nav.languages.ms')}</button>
+                <div className="absolute top-full right-0 mt-2 w-44 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all max-h-96 overflow-y-auto">
+                  {LANGUAGE_ORDER.map((language, index) => (
+                    <a
+                      key={language.code}
+                      href={`/${language.code}`}
+                      onClick={(e) => { e.preventDefault(); switchLanguage(language.code); }}
+                      className={`block w-full text-left px-4 py-2.5 text-sm transition-colors whitespace-nowrap cursor-pointer ${
+                        currentLang === language.code
+                          ? 'bg-red-50 text-red-700 font-semibold'
+                          : 'text-gray-700 hover:bg-gray-50 hover:text-red-700'
+                      } ${index === 0 ? 'rounded-t-lg' : ''} ${index === LANGUAGE_ORDER.length - 1 ? 'rounded-b-lg' : ''}`}
+                    >
+                      {language.native}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -105,21 +129,24 @@ export default function HomePage() {
             <a href="#community" onClick={closeMobileMenu} className="block py-2 text-sm font-medium text-gray-700 hover:text-red-700 transition-colors cursor-pointer">{t('nav.community')}</a>
             <a href="#contact" onClick={closeMobileMenu} className="block py-2 text-sm font-medium text-gray-700 hover:text-red-700 transition-colors cursor-pointer">{t('nav.contact')}</a>
             
-            {/* Mobile Language Selector */}
+            {/* Mobile Language Selector - Link Based */}
             <div className="pt-3 border-t border-gray-200">
               <div className="text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">{t('nav.language')}</div>
               <div className="grid grid-cols-2 gap-2">
-                <button onClick={() => { changeLanguage('en'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.en')}</button>
-                <button onClick={() => { changeLanguage('zh'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.zh')}</button>
-                <button onClick={() => { changeLanguage('es'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.es')}</button>
-                <button onClick={() => { changeLanguage('fr'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.fr')}</button>
-                <button onClick={() => { changeLanguage('de'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.de')}</button>
-                <button onClick={() => { changeLanguage('it'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.it')}</button>
-                <button onClick={() => { changeLanguage('ja'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ja')}</button>
-                <button onClick={() => { changeLanguage('ko'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ko')}</button>
-                <button onClick={() => { changeLanguage('vi'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.vi')}</button>
-                <button onClick={() => { changeLanguage('th'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.th')}</button>
-                <button onClick={() => { changeLanguage('ms'); closeMobileMenu(); }} className="py-2 px-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-red-700 rounded-md transition-colors cursor-pointer text-left">{t('nav.languages.ms')}</button>
+                {LANGUAGE_ORDER.map((language) => (
+                  <a
+                    key={language.code}
+                    href={`/${language.code}`}
+                    onClick={(e) => { e.preventDefault(); switchLanguage(language.code); }}
+                    className={`py-2 px-3 text-sm rounded-md transition-colors cursor-pointer text-left ${
+                      currentLang === language.code
+                        ? 'bg-red-50 text-red-700 font-semibold'
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-red-700'
+                    }`}
+                  >
+                    {language.native}
+                  </a>
+                ))}
               </div>
             </div>
 
