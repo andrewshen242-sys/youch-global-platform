@@ -37,28 +37,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script 
-      id="readdy-agent-widget"
-      src="https://readdy.ai/api/public/assistant/widget?projectId=69f35718-340b-450b-8fa7-1fa3d144200d"
-      mode="hybrid"
-      voice-show-transcript="true"
-      theme="light"
-      size="compact"
-      accent-color="#DC2626"
-      button-base-color="#1F2937"
-      button-accent-color="#FFFFFF"
-      main-label="與我們對話"
-      empty-chat-message="您好！歡迎來到 Project-Based Online Learning Academy，有任何關於課程、招生或教師培訓的問題，請隨時詢問！"
-      defer
-    ></script>
     <script>
-      // Update Readdy Agent widget language based on current route
-      function updateWidgetLanguage() {
+      // Get language from URL before loading widget
+      (function() {
         const path = window.location.pathname;
         const lang = path.split('/')[1] || 'en';
-        
-        const widgetScript = document.getElementById('readdy-agent-widget');
-        if (!widgetScript) return;
         
         const translations = {
           en: {
@@ -108,25 +91,72 @@
         };
         
         const translation = translations[lang] || translations.en;
-        widgetScript.setAttribute('main-label', translation.mainLabel);
-        widgetScript.setAttribute('empty-chat-message', translation.emptyChatMessage);
-      }
-      
-      // Update on initial load
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', updateWidgetLanguage);
-      } else {
-        updateWidgetLanguage();
-      }
-      
-      // Update on route change
-      let lastPath = window.location.pathname;
-      setInterval(() => {
-        if (window.location.pathname !== lastPath) {
-          lastPath = window.location.pathname;
-          updateWidgetLanguage();
-        }
-      }, 100);
+        
+        // Create script element with correct attributes
+        const script = document.createElement('script');
+        script.id = 'readdy-agent-widget';
+        script.src = 'https://readdy.ai/api/public/assistant/widget?projectId=69f35718-340b-450b-8fa7-1fa3d144200d';
+        script.setAttribute('mode', 'hybrid');
+        script.setAttribute('voice-show-transcript', 'true');
+        script.setAttribute('theme', 'light');
+        script.setAttribute('size', 'compact');
+        script.setAttribute('accent-color', '#DC2626');
+        script.setAttribute('button-base-color', '#1F2937');
+        script.setAttribute('button-accent-color', '#FFFFFF');
+        script.setAttribute('main-label', translation.mainLabel);
+        script.setAttribute('empty-chat-message', translation.emptyChatMessage);
+        script.defer = true;
+        
+        document.body.appendChild(script);
+        
+        // Monitor route changes and reload widget if language changes
+        let lastLang = lang;
+        setInterval(() => {
+          const currentPath = window.location.pathname;
+          const currentLang = currentPath.split('/')[1] || 'en';
+          
+          if (currentLang !== lastLang) {
+            lastLang = currentLang;
+            const newTranslation = translations[currentLang] || translations.en;
+            
+            // Remove old widget
+            const oldScript = document.getElementById('readdy-agent-widget');
+            if (oldScript) {
+              oldScript.remove();
+            }
+            
+            // Remove widget UI elements
+            const widgetButton = document.getElementById('vapi-widget-floating-button');
+            if (widgetButton) {
+              widgetButton.remove();
+            }
+            
+            const widgetContainer = document.querySelector('[data-vapi-widget]');
+            if (widgetContainer) {
+              widgetContainer.remove();
+            }
+            
+            // Add new widget with updated language
+            setTimeout(() => {
+              const newScript = document.createElement('script');
+              newScript.id = 'readdy-agent-widget';
+              newScript.src = 'https://readdy.ai/api/public/assistant/widget?projectId=69f35718-340b-450b-8fa7-1fa3d144200d';
+              newScript.setAttribute('mode', 'hybrid');
+              newScript.setAttribute('voice-show-transcript', 'true');
+              newScript.setAttribute('theme', 'light');
+              newScript.setAttribute('size', 'compact');
+              newScript.setAttribute('accent-color', '#DC2626');
+              newScript.setAttribute('button-base-color', '#1F2937');
+              newScript.setAttribute('button-accent-color', '#FFFFFF');
+              newScript.setAttribute('main-label', newTranslation.mainLabel);
+              newScript.setAttribute('empty-chat-message', newTranslation.emptyChatMessage);
+              newScript.defer = true;
+              
+              document.body.appendChild(newScript);
+            }, 100);
+          }
+        }, 300);
+      })();
     </script>
   </body>
 </html>
