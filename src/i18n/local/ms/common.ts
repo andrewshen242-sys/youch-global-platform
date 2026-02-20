@@ -29,11 +29,11 @@ export const common = {
   // Hero Section
   hero: {
     badge: 'Sekolah Menengah Dalam Talian · Latihan Guru',
-    title: 'Akademi Pembelajaran Dalam Talian Berasaskan Projek',
-    subtitle: 'Kami komited untuk membina hab pembelajaran dalam talian yang berpusatkan pembelajaran kolaboratif, melalui Pembelajaran Berasaskan Projek (PBL), mencetuskan motivasi pembelajaran dan keupayaan berfikir pelajar.',
+    title: 'Akademi Pembelajaran Dalam Talian CPET-YouCH',
+    subtitle: 'Kami berdedikasi untuk mencipta hab pembelajaran kolaboratif melalui pembelajaran berasaskan projek (PBL), memberi inspirasi kepada motivasi dan keupayaan pemikiran kritis pelajar.',
     partnership: {
-      title: 'Akademi Pembelajaran Dalam Talian Berasaskan Projek',
-      subtitle: 'Sokongan akademik daripada CPET, Teachers College Universiti Columbia',
+      title: 'Akademi Dalam Talian CPET-YouCH',
+      subtitle: 'Sokongan akademik disediakan oleh CPET di Teachers College, Columbia University',
     },
     applyNow: 'Mohon Sekarang',
     learnMore: 'Ketahui Lebih Lanjut',
@@ -385,5 +385,13 @@ export const common = {
     keywords: 'sekolah menengah dalam talian,pembelajaran inkuiri,pembelajaran berasaskan projek,PBL,Teachers College Columbia,latihan guru,pendidikan dalam talian,kursus akademik,pembangunan profesional,pendidikan antarabangsa',
     ogTitle: 'Sekolah Menengah Dalam Talian Berasaskan Projek | Teachers College Columbia',
     ogDescription: 'Bekerjasama dengan Teachers College Universiti Columbia untuk menyediakan pendidikan berkualiti dan peluang pembangunan profesional untuk pendidik',
+  },
+
+  aboutPage: {
+    hero: { badge: 'Tentang Kami', title: 'Kenali CPET-YouCH Online Academy', subtitle: 'Bekerjasama dengan Teachers College Universiti Columbia, kami memupuk bakat masa depan dengan perspektif global dan pemikiran kritis.', breadcrumbLangCode: 'ms' },
+    background: { badge: 'Cerita Kami', title: 'Cerita CPET-YouCH', desc1: 'CPET-YouCH Online Academy diasaskan bersama oleh CPET di Teachers College Universiti Columbia dan YouCH Education Group.', desc2: 'Sebagai akademi dalam talian yang diakreditasi, kami menghimpunkan pendidik terbaik dunia.', highlight1: 'Akreditasi Columbia', highlight2: 'Rangkaian Global', highlight3: 'Standard Ketat', highlight4: 'Tenaga Pengajar Pakar', timelineBadge: 'Perjalanan Kami', timelineTitle: 'Cerita Pertumbuhan Kami', timeline: { m1: { year: '2018', title: 'Penubuhan', desc: 'CPET dan YouCH menandatangani perjanjian kerjasama' }, m2: { year: '2019', title: 'Kursus Pertama', desc: 'Pelancaran kursus kemanusiaan, sains dan matematik' }, m3: { year: '2021', title: 'Perikatan Global', desc: 'Menyertai GLA dengan lebih 100 sekolah di 8 negara' }, m4: { year: '2023', title: 'Latihan Guru', desc: 'Pelancaran program pembangunan profesional' }, m5: { year: '2025', title: 'Sidang Kemuncak GLA Shanghai', desc: 'Menganjurkan Sidang Kemuncak GLA 2025 di Shanghai' } } },
+    values: { badge: 'Nilai Teras', title: 'Nilai Teras Kami', subtitle: 'Nilai-nilai ini membimbing setiap keputusan pendidikan', v1: { title: 'Pengajaran Inovatif', desc: 'Penerokaan berterusan kaedah pendidikan terkini.' }, v2: { title: 'Berpusatkan Pelajar', desc: 'Pertumbuhan pelajar adalah teras utama.' }, v3: { title: 'Mengejar Kecemerlangan', desc: 'Mengekalkan standard akademik tertinggi.' }, v4: { title: 'Perspektif Global', desc: 'Menghubungkan sumber pendidikan seluruh dunia.' }, vision: { title: 'Visi Kami', desc: 'Menjadi platform pendidikan dalam talian terkemuka dunia.' }, mission: { title: 'Misi Kami', desc: 'Menyediakan pendidikan dalam talian berkualiti tinggi dan peluang pembangunan profesional.' } },
+    team: { badge: 'Pasukan Kami', title: 'Kenali Pasukan Kami', subtitle: 'Terdiri daripada pakar dari Teachers College Columbia dan institusi pendidikan terkemuka dunia', leadershipTitle: 'Pasukan Kepimpinan', academicTitle: 'Pasukan Akademik & Penasihat', leader1: { title: 'Presiden CPET-YOUCH Online Academy', desc: 'Ahli Lembaga Pengarah Institut Pendidikan Masa Depan' }, leader2: { title: 'Pengarah CPET, Teachers College, Columbia', desc: 'Dekan Institut Pendidikan Masa Depan' }, leader3: { title: 'Dekan Eksekutif Institut Pendidikan Masa Depan', desc: 'Penyelia Eksekutif Program Inovasi Pendidikan Global' }, academic1: { title: 'Pengurus Projek CPET' }, academic2: { title: 'Pengerusi Jawatankuasa Akademik' }, academic3: { title: 'Mentor Pasukan Guru' }, academic4: { title: 'Pakar PBL Antara Disiplin' }, academic5: { title: 'Pakar Kemanusiaan & Literasi' }, academic6: { title: 'Penasihat Utama PD' }, stat1: 'Tenaga Pengajar Ph.D.', stat2: 'Pengalaman Purata', stat3: 'Nisbah Pelajar/Guru', stat4: 'Negara Diliputi' },
+    cta: { title: 'Bersedia untuk memulakan perjalanan pembelajaran anda?', subtitle: 'Sertai CPET-YouCH Online Academy dan terokai kemungkinan tanpa had pembelajaran kolaboratif', applyBtn: 'Mohon Sekarang', contactBtn: 'Hubungi Kami', newsletterLabel: 'Langgan berita pendidikan terkini', subscribeBtn: 'Langgan' },
   },
 };

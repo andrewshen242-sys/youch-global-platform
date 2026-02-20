@@ -3,6 +3,7 @@ import type { RouteObject } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/home/page";
+import AboutPage from "../pages/about/page";
 import LanguageWrapper from "../components/feature/LanguageWrapper";
 
 const routes: RouteObject[] = [
@@ -17,6 +18,10 @@ const routes: RouteObject[] = [
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
       },
     ],
   },

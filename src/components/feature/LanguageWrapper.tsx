@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useParams, useNavigate, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const SUPPORTED_LANGS = ['en', 'zh', 'es', 'fr', 'de', 'it', 'ja', 'ko', 'vi', 'th', 'ms'];
+const SUPPORTED_LANGS = ['en', 'zh', 'es', 'fr', 'de', 'it', 'ja', 'ko', 'vi', 'th', 'ms', 'ar'];
 
 const LANG_HTML_MAP: Record<string, string> = {
   en: 'en',
@@ -17,7 +17,10 @@ const LANG_HTML_MAP: Record<string, string> = {
   vi: 'vi',
   th: 'th',
   ms: 'ms',
+  ar: 'ar',
 };
+
+const RTL_LANGS = ['ar'];
 
 export default function LanguageWrapper() {
   const { lang } = useParams<{ lang: string }>();
@@ -34,12 +37,15 @@ export default function LanguageWrapper() {
     }
   }, [lang, i18n, navigate]);
 
-  // Update document title, html lang, and meta tags when language changes
+  // Update document title, html lang, dir, and meta tags when language changes
   useEffect(() => {
     if (!lang || !SUPPORTED_LANGS.includes(lang)) return;
 
     // Update html lang attribute
     document.documentElement.lang = LANG_HTML_MAP[lang] || lang;
+
+    // Update html dir attribute for RTL languages
+    document.documentElement.dir = RTL_LANGS.includes(lang) ? 'rtl' : 'ltr';
 
     // Update document title
     document.title = t('seo.title');

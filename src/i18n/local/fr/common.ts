@@ -28,24 +28,22 @@ export const common = {
 
   // Hero Section
   hero: {
-    badge: 'Lyc\u00E9e en ligne \u00B7 Formation des enseignants',
-    title: 'Acad\u00E9mie d\'apprentissage en ligne par projets',
-    subtitle:
-      'Nous nous consacrons \u00E0 la cr\u00E9ation d\'un hub d\'apprentissage collaboratif en ligne gr\u00E2ce \u00E0 l\'apprentissage par projets (PBL), inspirant la motivation et la pens\u00E9e critique des \u00E9tudiants.',
+    badge: 'Lycée en ligne · Formation des enseignants',
+    title: 'Académie d\'apprentissage en ligne CPET-YouCH',
+    subtitle: 'Nous nous engageons à créer un centre d\'apprentissage collaboratif grâce à l\'apprentissage par projet (PBL), inspirant la motivation et les capacités de pensée critique des étudiants.',
     partnership: {
-      title: 'Acad\u00E9mie d\'apprentissage en ligne par projets',
-      subtitle:
-        'Soutien acad\u00E9mique fourni par le CPET du Teachers College de l\'Universit\u00E9 Columbia',
+      title: 'Académie en ligne CPET-YouCH',
+      subtitle: 'Soutien académique fourni par CPET au Teachers College, Columbia University',
     },
     applyNow: 'Postuler maintenant',
     learnMore: 'En savoir plus',
-    scrollDown: 'D\u00E9filer vers le bas',
+    scrollDown: 'Faire défiler vers le bas',
     exploreCourses: 'Explorer les cours',
     title1: 'Inspirer l\'apprentissage',
     title2: 'Croissance collaborative',
     title3: 'Explorer l\'avenir',
     description:
-      'Gr\u00E2ce \u00E0 l\'apprentissage par enqu\u00EAte et par projet, nous croyons qu\'un apprentissage v\u00E9ritablement significatif provient de la r\u00E9flexion commune, de la r\u00E9flexion continue et de la transformation des connaissances en capacit\u00E9 \u00E0 comprendre le monde et \u00E0 planifier l\'avenir',
+      'Grâce à l\'apprentissage par enquête et par projet, nous croyons qu\'un apprentissage vériablement significatif provient de la réflexion commune, de la réflexion continue et de la transformation des connaissances en capacité à comprendre le monde et à planifier l\'avenir',
   },
 
   // Features Section
@@ -457,5 +455,73 @@ export const common = {
     keywords: 'lyc\u00E9e en ligne,apprentissage par enqu\u00EAte,apprentissage par projets,PBL,Teachers College Columbia,formation des enseignants,\u00E9ducation en ligne,cours acad\u00E9miques,d\u00E9veloppement professionnel,\u00E9ducation internationale',
     ogTitle: 'Lyc\u00E9e en Ligne par Projets | Teachers College de Columbia',
     ogDescription: 'En partenariat avec le Teachers College de l\'Universit\u00E9 Columbia pour offrir une \u00E9ducation de qualit\u00E9 et le d\u00E9veloppement professionnel des enseignants',
+  },
+
+  // About Page
+  aboutPage: {
+    hero: {
+      badge: '\u00C0 Propos de Nous',
+      title: 'D\u00E9couvrez CPET-YouCH Online Academy',
+      subtitle: 'En partenariat avec le Teachers College de l\'Universit\u00E9 Columbia, nous cultivons les talents de demain avec une perspective globale et une pens\u00E9e critique.',
+      breadcrumbLangCode: 'fr',
+    },
+    background: {
+      badge: 'Notre Histoire',
+      title: 'L\'Histoire Derri\u00E8re CPET-YouCH',
+      desc1: 'CPET-YouCH Online Academy a \u00E9t\u00E9 cofond\u00E9e par le Centre de Formation Professionnelle des Enseignants (CPET) du Teachers College de Columbia et le Groupe \u00C9ducatif YouCH.',
+      desc2: 'En tant qu\'acad\u00E9mie en ligne certifi\u00E9e, nous rassemblons les meilleurs \u00E9ducateurs du monde pour offrir des cours acad\u00E9miques rigoureux et une formation professionnelle.',
+      highlight1: 'Certification Columbia',
+      highlight2: 'R\u00E9seau Mondial',
+      highlight3: 'Normes Rigoureuses',
+      highlight4: 'Facult\u00E9 Experte',
+      timelineBadge: 'Notre Parcours',
+      timelineTitle: 'Notre Histoire de Croissance',
+      timeline: {
+        m1: { year: '2018', title: 'Fondation', desc: 'CPET et YouCH signent un accord de partenariat' },
+        m2: { year: '2019', title: 'Premiers Cours', desc: 'Lancement des cours en sciences humaines, sciences et math\u00E9matiques' },
+        m3: { year: '2021', title: 'Alliance Mondiale', desc: 'Adh\u00E9sion au GLA avec plus de 100 \u00E9coles dans 8 pays' },
+        m4: { year: '2023', title: 'Formation Enseignants', desc: 'Lancement du programme de d\u00E9veloppement professionnel' },
+        m5: { year: '2025', title: 'Sommet GLA Shanghai', desc: 'Organisation du Sommet GLA 2025 \u00E0 Shanghai' },
+      },
+    },
+    values: {
+      badge: 'Valeurs Fondamentales',
+      title: 'Nos Valeurs Fondamentales',
+      subtitle: 'Ces valeurs guident chaque d\u00E9cision \u00E9ducative et fa\u00E7onnent l\'exp\u00E9rience d\'apprentissage',
+      v1: { title: 'Enseignement Innovant', desc: 'Exploration continue des m\u00E9thodes \u00E9ducatives de pointe, int\u00E9grant l\'apprentissage par enqu\u00EAte et par projets.' },
+      v2: { title: 'Centr\u00E9 sur l\'\u00C9tudiant', desc: 'La croissance de l\'\u00E9tudiant est au c\u0153ur, avec des parcours personnalis\u00E9s et un soutien acad\u00E9mique complet.' },
+      v3: { title: 'Poursuite de l\'Excellence', desc: 'Maintien des plus hauts standards acad\u00E9miques en partenariat avec Columbia.' },
+      v4: { title: 'Perspective Mondiale', desc: 'Connexion des ressources \u00E9ducatives mondiales \u00E0 travers l\'Alliance Mondiale d\'Apprentissage.' },
+      vision: { title: 'Notre Vision', desc: 'Devenir une plateforme \u00E9ducative en ligne leader mondial offrant des exp\u00E9riences \u00E9ducatives transformatrices.' },
+      mission: { title: 'Notre Mission', desc: 'Fournir une \u00E9ducation en ligne de haute qualit\u00E9 bas\u00E9e sur l\'enqu\u00EAte et des opportunit\u00E9s de d\u00E9veloppement professionnel pour les \u00E9ducateurs.' },
+    },
+    team: {
+      badge: 'Notre \u00C9quipe',
+      title: 'Rencontrez Notre \u00C9quipe',
+      subtitle: 'Compos\u00E9e d\'experts du Teachers College de Columbia et des meilleures institutions \u00E9ducatives mondiales',
+      leadershipTitle: '\u00C9quipe de Direction',
+      academicTitle: '\u00C9quipe Acad\u00E9mique et Consultative',
+      leader1: { title: 'Pr\u00E9sident de CPET-YOUCH Online Academy', desc: 'Membre du Conseil de l\'Institut d\'\u00C9ducation Future' },
+      leader2: { title: 'Directrice du CPET, Teachers College, Columbia', desc: 'Doyenne de l\'Institut d\'\u00C9ducation Future' },
+      leader3: { title: 'Doyen Ex\u00E9cutif de l\'Institut d\'\u00C9ducation Future', desc: 'Superviseur Ex\u00E9cutif du Programme d\'Innovation \u00C9ducative Mondiale' },
+      academic1: { title: 'Chef de Projet CPET' },
+      academic2: { title: 'Pr\u00E9sident du Comit\u00E9 Acad\u00E9mique' },
+      academic3: { title: 'Mentor de l\'\u00C9quipe Enseignante' },
+      academic4: { title: 'Expert PBL Interdisciplinaire' },
+      academic5: { title: 'Expert en Humanit\u00E9s et Litt\u00E9ratie' },
+      academic6: { title: 'Conseiller Principal en DP' },
+      stat1: 'Professeurs Doctorants',
+      stat2: 'Exp\u00E9rience Moyenne',
+      stat3: 'Ratio \u00C9tudiants/Enseignant',
+      stat4: 'Pays Couverts',
+    },
+    cta: {
+      title: 'Pr\u00EAt \u00E0 commencer votre parcours d\'apprentissage ?',
+      subtitle: 'Rejoignez CPET-YouCH Online Academy et explorez les possibilit\u00E9s infinies de l\'apprentissage collaboratif',
+      applyBtn: 'Postuler Maintenant',
+      contactBtn: 'Contactez-nous',
+      newsletterLabel: 'Abonnez-vous aux derni\u00E8res nouvelles \u00E9ducatives',
+      subscribeBtn: 'S\'abonner',
+    },
   },
 };

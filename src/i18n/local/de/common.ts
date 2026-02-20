@@ -28,24 +28,17 @@ export const common = {
 
   // Hero Section
   hero: {
-    badge: 'Online-Gymnasium \u00B7 Lehrerfortbildung',
-    title: 'Projektbasierte Online-Lernakademie',
-    subtitle:
-      'Wir widmen uns der Schaffung eines kollaborativen Online-Lernzentrums durch projektbasiertes Lernen (PBL), das die Motivation und das kritische Denken der Sch\u00FCler f\u00F6rdert.',
+    badge: 'Online-Gymnasium · Lehrerausbildung',
+    title: 'CPET-YouCH Online-Lernakademie',
+    subtitle: 'Wir widmen uns der Schaffung eines kollaborativen Lernzentrums durch projektbasiertes Lernen (PBL), das die Motivation und kritischen Denkfähigkeiten der Schüler inspiriert.',
     partnership: {
-      title: 'Projektbasierte Online-Lernakademie',
-      subtitle:
-        'Akademische Unterst\u00FCtzung durch CPET am Teachers College der Columbia University',
+      title: 'CPET-YouCH Online-Akademie',
+      subtitle: 'Akademische Unterstützung durch CPET am Teachers College, Columbia University',
     },
-    applyNow: 'Jetzt Bewerben',
-    learnMore: 'Mehr Erfahren',
-    scrollDown: 'Nach Unten Scrollen',
-    exploreCourses: 'Kurse Erkunden',
-    title1: 'Lernen Inspirieren',
-    title2: 'Kollaboratives Wachstum',
-    title3: 'Die Zukunft Erkunden',
-    description:
-      'Durch forschungsbasiertes und projektbasiertes Lernen glauben wir, dass bedeutungsvolles Lernen aus gemeinsamem Denken, kontinuierlicher Reflexion und der Umwandlung von Wissen in die F\u00E4higkeit, die Welt zu verstehen und die Zukunft zu planen, entsteht',
+    applyNow: 'Jetzt bewerben',
+    learnMore: 'Mehr erfahren',
+    scrollDown: 'Nach unten scrollen',
+    exploreCourses: 'Kurse erkunden',
   },
 
   // Features Section
@@ -461,5 +454,73 @@ export const common = {
     keywords: 'Online-Gymnasium,forschungsbasiertes Lernen,projektbasiertes Lernen,PBL,Teachers College Columbia,Lehrerfortbildung,Online-Bildung,akademische Kurse,professionelle Entwicklung,internationale Bildung',
     ogTitle: 'Projektbasiertes Online-Gymnasium | Teachers College Columbia',
     ogDescription: 'In Partnerschaft mit dem Teachers College der Columbia University f\u00FCr qualitativ hochwertige Bildung und Lehrerfortbildung',
+  },
+
+  // About Page
+  aboutPage: {
+    hero: {
+      badge: '\u00DCber Uns',
+      title: 'Entdecken Sie CPET-YouCH Online-Akademie',
+      subtitle: 'In Partnerschaft mit dem Teachers College der Columbia University widmen wir uns der F\u00F6rderung zuk\u00FCnftiger Talente mit globaler Perspektive und kritischem Denken.',
+      breadcrumbLangCode: 'de',
+    },
+    background: {
+      badge: 'Unsere Geschichte',
+      title: 'Die Geschichte Hinter CPET-YouCH',
+      desc1: 'Die CPET-YouCH Online-Akademie wurde vom Zentrum f\u00FCr Professionelle Lehrerbildung (CPET) am Teachers College der Columbia University und der YouCH Education Group mitbegr\u00FCndet.',
+      desc2: 'Als akademisch zertifizierte Online-Akademie versammeln wir die besten P\u00E4dagogen der Welt, um strenge akademische Kurse und professionelle Entwicklung anzubieten.',
+      highlight1: 'Columbia Zertifiziert',
+      highlight2: 'Globales Netzwerk',
+      highlight3: 'Strenge Standards',
+      highlight4: 'Experten-Fakult\u00E4t',
+      timelineBadge: 'Unser Weg',
+      timelineTitle: 'Unsere Wachstumsgeschichte',
+      timeline: {
+        m1: { year: '2018', title: 'Gr\u00FCndung', desc: 'CPET und YouCH unterzeichnen Partnerschaftsvereinbarung' },
+        m2: { year: '2019', title: 'Erste Kurse', desc: 'Start der Kurse in Geisteswissenschaften, Naturwissenschaften und Mathematik' },
+        m3: { year: '2021', title: 'Globale Allianz', desc: 'Beitritt zur GLA mit \u00FCber 100 Schulen in 8 L\u00E4ndern' },
+        m4: { year: '2023', title: 'Lehrerfortbildung', desc: 'Start des professionellen Entwicklungsprogramms' },
+        m5: { year: '2025', title: 'GLA Shanghai Gipfel', desc: 'Ausrichtung des GLA-Gipfels 2025 in Shanghai' },
+      },
+    },
+    values: {
+      badge: 'Kernwerte',
+      title: 'Unsere Kernwerte',
+      subtitle: 'Diese Kernwerte leiten jede Bildungsentscheidung und formen die Lernerfahrung',
+      v1: { title: 'Innovative Lehre', desc: 'Kontinuierliche Erforschung modernster Bildungsmethoden, Integration von forschungsbasiertem und projektbasiertem Lernen.' },
+      v2: { title: 'Sch\u00FClerzentriert', desc: 'Das Wachstum der Sch\u00FCler steht im Mittelpunkt, mit personalisierten Lernpfaden und umfassender akademischer Unterst\u00FCtzung.' },
+      v3: { title: 'Streben nach Exzellenz', desc: 'Aufrechterhaltung h\u00F6chster akademischer Standards in Partnerschaft mit Columbia.' },
+      v4: { title: 'Globale Perspektive', desc: 'Verbindung weltweiter Bildungsressourcen durch die Globale Lernallianz.' },
+      vision: { title: 'Unsere Vision', desc: 'Eine weltweit f\u00FChrende Online-Bildungsplattform zu werden, die transformative Bildungserfahrungen bietet.' },
+      mission: { title: 'Unsere Mission', desc: 'Hochwertige forschungsbasierte Online-Bildung und professionelle Entwicklungsm\u00F6glichkeiten f\u00FCr P\u00E4dagogen bereitzustellen.' },
+    },
+    team: {
+      badge: 'Unser Team',
+      title: 'Lernen Sie Unser Team Kennen',
+      subtitle: 'Zusammengesetzt aus Experten des Teachers College der Columbia University und f\u00FChrenden Bildungseinrichtungen weltweit',
+      leadershipTitle: 'F\u00FChrungsteam',
+      academicTitle: 'Akademisches und Beraterteam',
+      leader1: { title: 'Pr\u00E4sident der CPET-YOUCH Online-Akademie', desc: 'Vorstandsmitglied des Zukunftsbildungsinstituts' },
+      leader2: { title: 'Direktorin des CPET, Teachers College, Columbia', desc: 'Dekanin des Zukunftsbildungsinstituts' },
+      leader3: { title: 'Gesch\u00E4ftsf\u00FChrender Dekan des Zukunftsbildungsinstituts', desc: 'Exekutiver Supervisor des Globalen Bildungsinnovationsprogramms' },
+      academic1: { title: 'CPET Projektmanager' },
+      academic2: { title: 'Vorsitzender des Akademischen Ausschusses' },
+      academic3: { title: 'Schullehrer-Team-Mentor' },
+      academic4: { title: 'Interdisziplin\u00E4rer PBL-Experte' },
+      academic5: { title: 'Experte f\u00FCr Geisteswissenschaften und Literalit\u00E4t' },
+      academic6: { title: 'Leitender PD-Berater' },
+      stat1: 'Promovierte Lehrkr\u00E4fte',
+      stat2: 'Durchschnittliche Lehrerfahrung',
+      stat3: 'Sch\u00FCler-Lehrer-Verh\u00E4ltnis',
+      stat4: 'Abgedeckte L\u00E4nder',
+    },
+    cta: {
+      title: 'Bereit, Ihre Lernreise zu beginnen?',
+      subtitle: 'Treten Sie der CPET-YouCH Online-Akademie bei und erkunden Sie die unendlichen M\u00F6glichkeiten des kollaborativen Lernens',
+      applyBtn: 'Jetzt Bewerben',
+      contactBtn: 'Kontaktieren Sie Uns',
+      newsletterLabel: 'Abonnieren Sie die neuesten Bildungsnachrichten',
+      subscribeBtn: 'Abonnieren',
+    },
   },
 };

@@ -10,6 +10,7 @@ import { common as itCommon } from './it/common';
 import { common as viCommon } from './vi/common';
 import { common as thCommon } from './th/common';
 import { common as msCommon } from './ms/common';
+import { common as arCommon } from './ar/common';
 
 const messages = {
   zh: {
@@ -44,6 +45,9 @@ const messages = {
   },
   ms: {
     common: msCommon,
+  },
+  ar: {
+    common: arCommon,
   },
 };
 

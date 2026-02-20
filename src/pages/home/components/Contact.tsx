@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
@@ -11,6 +11,42 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [visibleItems, setVisibleItems] = useState<boolean[]>([false, false, false, false]);
+  const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const observers = itemsRef.current.map((item, index) => {
+      if (!item) return null;
+      
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                setVisibleItems(prev => {
+                  const newState = [...prev];
+                  newState[index] = true;
+                  return newState;
+                });
+              }, index * 100);
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+      
+      observer.observe(item);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        if (observer && itemsRef.current[index]) {
+          observer.unobserve(itemsRef.current[index]!);
+        }
+      });
+    };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,64 +87,81 @@ export default function Contact() {
     }));
   };
 
+  const contactMethods = [
+    {
+      icon: 'ri-mail-line',
+      title: t('contact.email.title'),
+      content: t('contact.email.value'),
+      link: `mailto:${t('contact.email.value')}`
+    },
+    {
+      icon: 'ri-phone-line',
+      title: t('contact.phone.title'),
+      content: t('contact.phone.value'),
+      subtitle: t('contact.phone.hours')
+    },
+    {
+      icon: 'ri-map-pin-line',
+      title: t('contact.address.title'),
+      content: t('contact.address.value')
+    },
+    {
+      icon: 'ri-time-line',
+      title: t('contact.hours.title'),
+      content: `${t('contact.hours.weekday')} / ${t('contact.hours.weekend')}`
+    }
+  ];
+
   return (
-    <div className="py-24 bg-gray-50">
+    <div className="py-20 sm:py-24 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Section Header - Unified Style */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-red-50 border border-red-200 rounded-full mb-5">
+            <div className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2"></div>
+            <span className="text-xs font-semibold text-red-800 uppercase tracking-widest">
+              聯絡我們
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 mb-4 leading-tight">
+            {t('contact.title')}
+          </h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            {t('contact.description')}
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left - Contact Info */}
           <div>
-            <h2 className="text-5xl lg:text-6xl font-medium text-gray-900 mb-6">
-              {t('contact.title')}
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-12">
-              {t('contact.description')}
-            </p>
-
             {/* Contact Methods */}
-            <div className="space-y-8">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="ri-mail-line text-teal-600 text-xl"></i>
+            <div className="space-y-6">
+              {contactMethods.map((method, index) => (
+                <div 
+                  key={index}
+                  ref={el => itemsRef.current[index] = el}
+                  className={`flex items-start group transition-all duration-500 ${
+                    visibleItems[index] ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+                  }`}
+                >
+                  <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0 group-hover:bg-red-700 group-hover:scale-110 transition-all duration-300">
+                    <i className={`${method.icon} text-red-700 group-hover:text-white text-xl transition-colors`}></i>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1 group-hover:text-red-700 transition-colors">{method.title}</h4>
+                    {method.link ? (
+                      <a href={method.link} className="text-gray-600 hover:text-red-700 transition-colors cursor-pointer">
+                        {method.content}
+                      </a>
+                    ) : (
+                      <p className="text-gray-600">{method.content}</p>
+                    )}
+                    {method.subtitle && (
+                      <p className="text-sm text-gray-500 mt-1">{method.subtitle}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{t('contact.email.title')}</h4>
-                  <a href={`mailto:${t('contact.email.value')}`} className="text-gray-600 hover:text-teal-600 transition-colors cursor-pointer">
-                    {t('contact.email.value')}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="ri-phone-line text-teal-600 text-xl"></i>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{t('contact.phone.title')}</h4>
-                  <p className="text-gray-600">{t('contact.phone.value')}</p>
-                  <p className="text-sm text-gray-500 mt-1">{t('contact.phone.hours')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="ri-map-pin-line text-teal-600 text-xl"></i>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{t('contact.address.title')}</h4>
-                  <p className="text-gray-600">{t('contact.address.value')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="ri-time-line text-teal-600 text-xl"></i>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">{t('contact.hours.title')}</h4>
-                  <p className="text-gray-600">{t('contact.hours.weekday')}</p>
-                  <p className="text-gray-600">{t('contact.hours.weekend')}</p>
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Social Links */}
@@ -124,7 +177,7 @@ export default function Contact() {
                   <a
                     key={index}
                     href="#"
-                    className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center hover:bg-teal-600 hover:text-white transition-colors cursor-pointer"
+                    className="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center hover:bg-red-700 hover:text-white hover:scale-110 transition-all duration-300 cursor-pointer"
                     aria-label={social.label}
                   >
                     <i className={`${social.icon} text-lg`}></i>
@@ -135,7 +188,7 @@ export default function Contact() {
           </div>
 
           {/* Right - Contact Form */}
-          <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-sm">
+          <div className="bg-gray-50 rounded-3xl p-8 lg:p-10 border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-500">
             <form id="contact-form" data-readdy-form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -148,7 +201,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all text-sm"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent focus:shadow-md outline-none transition-all text-sm"
                   placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
@@ -164,7 +217,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all text-sm"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent focus:shadow-md outline-none transition-all text-sm"
                   placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
@@ -179,7 +232,7 @@ export default function Contact() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all text-sm cursor-pointer"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent focus:shadow-md outline-none transition-all text-sm cursor-pointer"
                 >
                   <option value="">{t('contact.form.subjectOptions.select')}</option>
                   <option value="course">{t('contact.form.subjectOptions.course')}</option>
@@ -202,7 +255,7 @@ export default function Contact() {
                   maxLength={500}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-600 focus:border-transparent outline-none transition-all resize-none text-sm"
+                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent focus:shadow-md outline-none transition-all resize-none text-sm"
                   placeholder={t('contact.form.messagePlaceholder')}
                 />
                 <div className="text-xs text-gray-500 mt-1 text-right">
@@ -213,19 +266,19 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed whitespace-nowrap"
+                className="w-full py-4 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 hover:shadow-lg transition-all disabled:bg-gray-400 disabled:cursor-not-allowed whitespace-nowrap"
               >
                 {isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
               </button>
 
               {submitStatus === 'success' && (
-                <div className="p-4 bg-teal-50 border border-teal-200 rounded-lg text-teal-700 text-sm">
+                <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700 text-sm animate-fade-in">
                   {t('contact.form.successMessage')}
                 </div>
               )}
 
               {submitStatus === 'error' && (
-                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm animate-fade-in">
                   {t('contact.form.errorMessage')}
                 </div>
               )}
@@ -233,6 +286,16 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes fade-in {
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-in {
+          animation: fade-in 0.3s ease-out;
+        }
+      `}</style>
     </div>
   );
 }

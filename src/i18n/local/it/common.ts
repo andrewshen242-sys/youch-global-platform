@@ -28,19 +28,17 @@ export const common = {
 
   // Hero Section
   hero: {
-    badge: 'Liceo Online · Formazione Docenti',
-    title: 'Accademia di Apprendimento Online Basata su Progetti',
-    subtitle:
-      "Ci dedichiamo alla creazione di un hub di apprendimento collaborativo online attraverso l'apprendimento basato su progetti (PBL), ispirando la motivazione e il pensiero critico degli studenti.",
+    badge: 'Scuola superiore online · Formazione insegnanti',
+    title: 'Accademia di apprendimento online CPET-YouCH',
+    subtitle: 'Ci dedichiamo alla creazione di un hub di apprendimento collaborativo attraverso l\'apprendimento basato su progetti (PBL), ispirando la motivazione e le capacità di pensiero critico degli studenti.',
     partnership: {
-      title: 'Accademia di Apprendimento Online Basata su Progetti',
-      subtitle:
-        'Supporto accademico fornito dal CPET del Teachers College della Columbia University',
+      title: 'Accademia Online CPET-YouCH',
+      subtitle: 'Supporto accademico fornito da CPET presso Teachers College, Columbia University',
     },
-    applyNow: 'Candidati Ora',
-    learnMore: 'Scopri di Più',
-    scrollDown: 'Scorri Verso il Basso',
-    exploreCourses: 'Esplora i Corsi',
+    applyNow: 'Candidati ora',
+    learnMore: 'Scopri di più',
+    scrollDown: 'Scorri verso il basso',
+    exploreCourses: 'Esplora i corsi',
     title1: "Ispirare l'Apprendimento",
     title2: 'Crescita Collaborativa',
     title3: 'Esplorare il Futuro',
@@ -464,5 +462,13 @@ export const common = {
     keywords: 'liceo online,apprendimento per indagine,apprendimento basato su progetti,PBL,Teachers College Columbia,formazione insegnanti,educazione online,corsi accademici,sviluppo professionale,educazione internazionale',
     ogTitle: 'Liceo Online Basato su Progetti | Teachers College Columbia',
     ogDescription: 'In partnership con il Teachers College della Columbia University per offrire educazione di qualit\u00E0 e formazione professionale per insegnanti',
+  },
+
+  aboutPage: {
+    hero: { badge: 'Chi Siamo', title: 'Scopri CPET-YouCH Online Academy', subtitle: 'In partnership con il Teachers College della Columbia University, coltiviamo i talenti del futuro con prospettive globali e pensiero critico.', breadcrumbLangCode: 'it' },
+    background: { badge: 'La Nostra Storia', title: 'La Storia di CPET-YouCH', desc1: 'CPET-YouCH Online Academy \u00E8 stata cofondata dal Centro per l\'Educazione Professionale degli Insegnanti (CPET) del Teachers College della Columbia University e dal Gruppo Educativo YouCH.', desc2: 'Come accademia online certificata, riuniamo i migliori educatori del mondo per offrire corsi accademici rigorosi e formazione professionale.', highlight1: 'Certificazione Columbia', highlight2: 'Rete Globale', highlight3: 'Standard Rigorosi', highlight4: 'Facolt\u00E0 Esperta', timelineBadge: 'Il Nostro Percorso', timelineTitle: 'La Nostra Crescita', timeline: { m1: { year: '2018', title: 'Fondazione', desc: 'CPET e YouCH firmano l\'accordo di partnership' }, m2: { year: '2019', title: 'Primi Corsi', desc: 'Lancio dei corsi in scienze umane, scienze e matematica' }, m3: { year: '2021', title: 'Alleanza Globale', desc: 'Adesione al GLA con oltre 100 scuole in 8 paesi' }, m4: { year: '2023', title: 'Formazione Insegnanti', desc: 'Lancio del programma di sviluppo professionale' }, m5: { year: '2025', title: 'Summit GLA Shanghai', desc: 'Organizzazione del Summit GLA 2025 a Shanghai' } } },
+    values: { badge: 'Valori Fondamentali', title: 'I Nostri Valori', subtitle: 'Questi valori guidano ogni decisione educativa e plasmano l\'esperienza di apprendimento', v1: { title: 'Insegnamento Innovativo', desc: 'Esplorazione continua di metodi educativi all\'avanguardia.' }, v2: { title: 'Centrato sullo Studente', desc: 'La crescita dello studente \u00E8 al centro, con percorsi personalizzati e supporto accademico completo.' }, v3: { title: 'Ricerca dell\'Eccellenza', desc: 'Mantenimento dei pi\u00F9 alti standard accademici in partnership con Columbia.' }, v4: { title: 'Prospettiva Globale', desc: 'Connessione delle risorse educative mondiali attraverso l\'Alleanza Globale.' }, vision: { title: 'La Nostra Visione', desc: 'Diventare una piattaforma educativa online leader mondiale che offra esperienze educative trasformative.' }, mission: { title: 'La Nostra Missione', desc: 'Fornire educazione online di alta qualit\u00E0 basata sull\'indagine e opportunit\u00E0 di sviluppo professionale per educatori.' } },
+    team: { badge: 'Il Nostro Team', title: 'Incontra il Nostro Team', subtitle: 'Composto da esperti del Teachers College di Columbia e delle principali istituzioni educative mondiali', leadershipTitle: 'Team di Leadership', academicTitle: 'Team Accademico e Consultivo', leader1: { title: 'Presidente di CPET-YOUCH Online Academy', desc: 'Membro del Consiglio dell\'Istituto di Educazione Futura' }, leader2: { title: 'Direttrice del CPET, Teachers College, Columbia', desc: 'Decana dell\'Istituto di Educazione Futura' }, leader3: { title: 'Decano Esecutivo dell\'Istituto di Educazione Futura', desc: 'Supervisore Esecutivo del Programma di Innovazione Educativa Globale' }, academic1: { title: 'Project Manager CPET' }, academic2: { title: 'Presidente del Comitato Accademico' }, academic3: { title: 'Mentore del Team Insegnanti' }, academic4: { title: 'Esperto PBL Interdisciplinare' }, academic5: { title: 'Esperto in Umanistiche e Letteratura' }, academic6: { title: 'Consulente Principale PD' }, stat1: 'Docenti con Dottorato', stat2: 'Esperienza Media', stat3: 'Rapporto Studenti/Insegnante', stat4: 'Paesi Coperti' },
+    cta: { title: 'Pronto a iniziare il tuo percorso di apprendimento?', subtitle: 'Unisciti a CPET-YouCH Online Academy e esplora le infinite possibilit\u00E0 dell\'apprendimento collaborativo', applyBtn: 'Candidati Ora', contactBtn: 'Contattaci', newsletterLabel: 'Iscriviti alle ultime novit\u00E0 educative', subscribeBtn: 'Iscriviti' },
   },
 };
