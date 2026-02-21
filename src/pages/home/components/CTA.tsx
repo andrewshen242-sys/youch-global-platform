@@ -10,38 +10,30 @@ export default function CTA() {
       const element = document.getElementById('cta-section');
       if (element) {
         const rect = element.getBoundingClientRect();
-        const elementTop = rect.top;
-        const elementHeight = rect.height;
-        const windowHeight = window.innerHeight;
-        
-        if (elementTop < windowHeight && elementTop + elementHeight > 0) {
-          const scrollProgress = (windowHeight - elementTop) / (windowHeight + elementHeight);
-          setScrollY(scrollProgress);
-        }
+        const scrolled = Math.max(0, -rect.top);
+        setScrollY(scrolled * 0.003);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div id="cta-section" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="cta-section" className="relative min-h-[75vh] flex items-center overflow-hidden">
       {/* Background Image with Parallax */}
       <div 
-        className="absolute inset-0"
+        className="absolute inset-0 z-0"
         style={{
           transform: `translateY(${scrollY * 100}px)`,
           transition: 'transform 0.1s ease-out'
         }}
       >
         <img 
-          src="https://readdy.ai/api/search-image?query=wide%20panoramic%20view%20of%20collaborative%20learning%20space%20with%20students%20working%20together%20around%20large%20table%20with%20whiteboards%20and%20mind%20maps%20visible%20bright%20natural%20light%20from%20large%20windows%20red%20and%20white%20color%20scheme%20modern%20educational%20environment%20inspiring%20atmosphere&width=1920&height=1080&seq=cta-bg-002-v3&orientation=landscape" 
+          src="https://static.readdy.ai/image/3af05d3b472ac0100d31991f59cc9c0c/33bed01683b3dd20d886f2c957f1f67f.png" 
           alt="CTA Background"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50"></div>
       </div>
 
       {/* Decorative Elements */}
@@ -106,6 +98,6 @@ export default function CTA() {
           opacity: 0;
         }
       `}</style>
-    </div>
+    </section>
   );
 }

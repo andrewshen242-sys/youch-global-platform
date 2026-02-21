@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -54,7 +53,7 @@ export default function Footer() {
           {/* Column 1 - Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
-              <img src="https://static.readdy.ai/image/3af05d3b472ac0100d31991f59cc9c0c/1745d77b694c6f3d19804cb26390aa9a.png" alt="CPET-YouCH Online Academy" className="h-16 w-auto object-contain" />
+              <img src="https://static.readdy.ai/image/3af05d3b472ac0100d31991f59cc9c0c/f12a2e01137610acd85c80f5993de871.png" alt="CPET-YouCH Online Academy" className="h-16 w-auto object-contain" />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-6">
               {t('footer.description')}
@@ -154,9 +153,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-            <p>&copy; 2018 CPET-YouCH Online Academy. {t('footer.copyright')}</p>
+            <p>&copy; 2024 CPET-YouCH Online Academy. {t('footer.copyright')}</p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
-              <span className="hover:text-white transition-colors">Powered by CPET-YouCH</span>
+              <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.privacy')}</a>
+              <a href="#" className="hover:text-white transition-colors cursor-pointer">{t('footer.terms')}</a>
+              <span className="hover:text-white transition-colors">Powered by CPET&YOUCH</span>
+              <a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer">
+                {t('footer.poweredBy')}
+              </a>
             </div>
           </div>
         </div>

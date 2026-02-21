@@ -72,16 +72,10 @@ export default function Community() {
   ];
 
   return (
-    <div className="py-20 sm:py-24 lg:py-28 bg-white">
+    <div className="py-14 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header - Unified Style */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-red-50 border border-red-200 rounded-full mb-5">
-            <div className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2"></div>
-            <span className="text-xs font-semibold text-red-800 uppercase tracking-widest">
-              社群活動
-            </span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 mb-4 leading-tight">
             {t('community.title')}
           </h2>
@@ -135,14 +129,6 @@ export default function Community() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <a href="#join" className="inline-flex items-center px-8 py-4 bg-red-700 text-white font-semibold rounded-full hover:bg-red-800 transition-all hover:scale-105 hover:shadow-2xl whitespace-nowrap cursor-pointer shadow-lg">
-            {t('community.cta')}
-            <i className="ri-calendar-check-line ml-2"></i>
-          </a>
         </div>
       </div>
     </div>

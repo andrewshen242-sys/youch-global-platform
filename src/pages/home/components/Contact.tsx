@@ -113,16 +113,10 @@ export default function Contact() {
   ];
 
   return (
-    <div className="py-20 sm:py-24 lg:py-28 bg-white">
+    <div className="py-14 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header - Unified Style */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-red-50 border border-red-200 rounded-full mb-5">
-            <div className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2"></div>
-            <span className="text-xs font-semibold text-red-800 uppercase tracking-widest">
-              聯絡我們
-            </span>
-          </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-gray-900 mb-4 leading-tight">
             {t('contact.title')}
           </h2>

@@ -135,10 +135,10 @@ export default function Mission() {
   ];
 
   return (
-    <div className="py-20 sm:py-24 lg:py-28 bg-white">
+    <div className="py-14 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header - Unified Style */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-14">
           <div className="inline-flex items-center px-4 py-2 bg-red-50 border border-red-200 rounded-full mb-5">
             <div className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2 animate-pulse"></div>
             <span className="text-xs font-semibold text-red-800 uppercase tracking-widest">
@@ -154,7 +154,7 @@ export default function Mission() {
         </div>
 
         {/* Stats Section - Enhanced with more spacing */}
-        <div ref={statsRef} className="mb-28">
+        <div ref={statsRef} className="mb-20">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             {/* Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
@@ -199,7 +199,7 @@ export default function Mission() {
         </div>
 
         {/* Mission Points - Enhanced with decorative elements */}
-        <div ref={missionPointsRef} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-28">
+        <div ref={missionPointsRef} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Content */}
           <div>
             {/* Mission Points with fade-in animation */}

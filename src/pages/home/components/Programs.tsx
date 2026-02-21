@@ -81,7 +81,7 @@ export default function Programs() {
   ];
 
   return (
-    <div className="py-20 sm:py-24 lg:py-28 bg-gray-50">
+    <div className="py-14 sm:py-16 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header - Unified Style */}
         <div className="text-center mb-16">
